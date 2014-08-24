@@ -138,3 +138,17 @@ field string --fieldName frontDeskTicket --class ~.domain.ServiceOrder
 web mvc all --package ~.web
 field reference --fieldName subfamily --type ~.domain.ProductSubFamily --class ~.domain.PossibleFailures
 web mvc all --package ~.web
+entity jpa --class ~.domain.ServiceDiagnosys --testAutomatically 
+entity jpa --class ~.domain.DiagnosysServices --testAutomatically 
+field string --fieldName description --class ~.domain.DiagnosysServices
+// [failed] field reference --fieldName order --type ~.domain.ServiceOrder --class ~.domain.ServiceDiagnosys
+field reference --fieldName serviceOrder --type ~.domain.ServiceOrder --class ~.domain.ServiceDiagnosys
+entity jpa --class ~.domain.DiagnosisItems --testAutomatically 
+field string --fieldName description --class ~.domain.DiagnosisItems
+web mvc all --package ~.web
+entity jpa --class ~.domain.DiagnosisType --testAutomatically 
+field string --fieldName description --class ~.domain.DiagnosisType
+field set --fieldName cosmeticState --type ~.domain.DiagnosisType --class ~.domain.ServiceDiagnosys
+field set --fieldName services --type ~.domain.DiagnosysServices --class ~.domain.ServiceDiagnosys
+field set --fieldName items --type ~.domain.DiagnosisItems --class ~.domain.ServiceDiagnosys
+web mvc all --package ~.web

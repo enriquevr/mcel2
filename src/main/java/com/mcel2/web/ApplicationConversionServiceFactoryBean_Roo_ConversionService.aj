@@ -8,6 +8,9 @@ import com.mcel2.domain.Accesories;
 import com.mcel2.domain.Contract;
 import com.mcel2.domain.Customer;
 import com.mcel2.domain.CustomerAddress;
+import com.mcel2.domain.DiagnosisItems;
+import com.mcel2.domain.DiagnosisType;
+import com.mcel2.domain.DiagnosysServices;
 import com.mcel2.domain.Failures;
 import com.mcel2.domain.PossibleFailures;
 import com.mcel2.domain.PossibleFailuresType;
@@ -17,6 +20,7 @@ import com.mcel2.domain.ProductColor;
 import com.mcel2.domain.ProductCosmeticState;
 import com.mcel2.domain.ProductFamily;
 import com.mcel2.domain.ProductSubFamily;
+import com.mcel2.domain.ServiceDiagnosys;
 import com.mcel2.domain.ServiceOrder;
 import com.mcel2.web.ApplicationConversionServiceFactoryBean;
 import org.springframework.beans.factory.annotation.Configurable;
@@ -143,6 +147,78 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         return new org.springframework.core.convert.converter.Converter<java.lang.String, com.mcel2.domain.CustomerAddress>() {
             public com.mcel2.domain.CustomerAddress convert(String id) {
                 return getObject().convert(getObject().convert(id, Long.class), CustomerAddress.class);
+            }
+        };
+    }
+    
+    public Converter<DiagnosisItems, String> ApplicationConversionServiceFactoryBean.getDiagnosisItemsToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.mcel2.domain.DiagnosisItems, java.lang.String>() {
+            public String convert(DiagnosisItems diagnosisItems) {
+                return new StringBuilder().append(diagnosisItems.getDescription()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, DiagnosisItems> ApplicationConversionServiceFactoryBean.getIdToDiagnosisItemsConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.mcel2.domain.DiagnosisItems>() {
+            public com.mcel2.domain.DiagnosisItems convert(java.lang.Long id) {
+                return DiagnosisItems.findDiagnosisItems(id);
+            }
+        };
+    }
+    
+    public Converter<String, DiagnosisItems> ApplicationConversionServiceFactoryBean.getStringToDiagnosisItemsConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.mcel2.domain.DiagnosisItems>() {
+            public com.mcel2.domain.DiagnosisItems convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), DiagnosisItems.class);
+            }
+        };
+    }
+    
+    public Converter<DiagnosisType, String> ApplicationConversionServiceFactoryBean.getDiagnosisTypeToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.mcel2.domain.DiagnosisType, java.lang.String>() {
+            public String convert(DiagnosisType diagnosisType) {
+                return new StringBuilder().append(diagnosisType.getDescription()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, DiagnosisType> ApplicationConversionServiceFactoryBean.getIdToDiagnosisTypeConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.mcel2.domain.DiagnosisType>() {
+            public com.mcel2.domain.DiagnosisType convert(java.lang.Long id) {
+                return DiagnosisType.findDiagnosisType(id);
+            }
+        };
+    }
+    
+    public Converter<String, DiagnosisType> ApplicationConversionServiceFactoryBean.getStringToDiagnosisTypeConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.mcel2.domain.DiagnosisType>() {
+            public com.mcel2.domain.DiagnosisType convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), DiagnosisType.class);
+            }
+        };
+    }
+    
+    public Converter<DiagnosysServices, String> ApplicationConversionServiceFactoryBean.getDiagnosysServicesToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.mcel2.domain.DiagnosysServices, java.lang.String>() {
+            public String convert(DiagnosysServices diagnosysServices) {
+                return new StringBuilder().append(diagnosysServices.getDescription()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, DiagnosysServices> ApplicationConversionServiceFactoryBean.getIdToDiagnosysServicesConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.mcel2.domain.DiagnosysServices>() {
+            public com.mcel2.domain.DiagnosysServices convert(java.lang.Long id) {
+                return DiagnosysServices.findDiagnosysServices(id);
+            }
+        };
+    }
+    
+    public Converter<String, DiagnosysServices> ApplicationConversionServiceFactoryBean.getStringToDiagnosysServicesConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.mcel2.domain.DiagnosysServices>() {
+            public com.mcel2.domain.DiagnosysServices convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), DiagnosysServices.class);
             }
         };
     }
@@ -363,6 +439,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<ServiceDiagnosys, String> ApplicationConversionServiceFactoryBean.getServiceDiagnosysToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.mcel2.domain.ServiceDiagnosys, java.lang.String>() {
+            public String convert(ServiceDiagnosys serviceDiagnosys) {
+                return "(no displayable fields)";
+            }
+        };
+    }
+    
+    public Converter<Long, ServiceDiagnosys> ApplicationConversionServiceFactoryBean.getIdToServiceDiagnosysConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.mcel2.domain.ServiceDiagnosys>() {
+            public com.mcel2.domain.ServiceDiagnosys convert(java.lang.Long id) {
+                return ServiceDiagnosys.findServiceDiagnosys(id);
+            }
+        };
+    }
+    
+    public Converter<String, ServiceDiagnosys> ApplicationConversionServiceFactoryBean.getStringToServiceDiagnosysConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.mcel2.domain.ServiceDiagnosys>() {
+            public com.mcel2.domain.ServiceDiagnosys convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), ServiceDiagnosys.class);
+            }
+        };
+    }
+    
     public Converter<ServiceOrder, String> ApplicationConversionServiceFactoryBean.getServiceOrderToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.mcel2.domain.ServiceOrder, java.lang.String>() {
             public String convert(ServiceOrder serviceOrder) {
@@ -403,6 +503,15 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getCustomerAddressToStringConverter());
         registry.addConverter(getIdToCustomerAddressConverter());
         registry.addConverter(getStringToCustomerAddressConverter());
+        registry.addConverter(getDiagnosisItemsToStringConverter());
+        registry.addConverter(getIdToDiagnosisItemsConverter());
+        registry.addConverter(getStringToDiagnosisItemsConverter());
+        registry.addConverter(getDiagnosisTypeToStringConverter());
+        registry.addConverter(getIdToDiagnosisTypeConverter());
+        registry.addConverter(getStringToDiagnosisTypeConverter());
+        registry.addConverter(getDiagnosysServicesToStringConverter());
+        registry.addConverter(getIdToDiagnosysServicesConverter());
+        registry.addConverter(getStringToDiagnosysServicesConverter());
         registry.addConverter(getFailuresToStringConverter());
         registry.addConverter(getIdToFailuresConverter());
         registry.addConverter(getStringToFailuresConverter());
@@ -430,6 +539,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getProductSubFamilyToStringConverter());
         registry.addConverter(getIdToProductSubFamilyConverter());
         registry.addConverter(getStringToProductSubFamilyConverter());
+        registry.addConverter(getServiceDiagnosysToStringConverter());
+        registry.addConverter(getIdToServiceDiagnosysConverter());
+        registry.addConverter(getStringToServiceDiagnosysConverter());
         registry.addConverter(getServiceOrderToStringConverter());
         registry.addConverter(getIdToServiceOrderConverter());
         registry.addConverter(getStringToServiceOrderConverter());

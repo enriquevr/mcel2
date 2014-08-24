@@ -55,5 +55,21 @@
             <menu:item id="i_possiblefailurestype_new" messageCode="global_menu_new" url="/possiblefailurestypes?form" z="5mcy7hQmcTMi93vlZxvWhkYvLFs="/>
             <menu:item id="i_possiblefailurestype_list" messageCode="global_menu_list" url="/possiblefailurestypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="3I4HA2gly5xzwI+A9JuTaXvkW98="/>
         </menu:category>
+        <menu:category id="c_diagnosisitems" z="eijlrv393mRkltcaNklqP/8UOWc=">
+            <menu:item id="i_diagnosisitems_new" messageCode="global_menu_new" url="/diagnosisitemses?form" z="dD3qTMvQS/7yuKED1B8GjHhrUoA="/>
+            <menu:item id="i_diagnosisitems_list" messageCode="global_menu_list" url="/diagnosisitemses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="X1lnfK0bQrBrDbOBlrENErGZdek="/>
+        </menu:category>
+        <menu:category id="c_diagnosysservices" z="RuS0wgFc8HJ3B/g9mlwLsweR1b0=">
+            <menu:item id="i_diagnosysservices_new" messageCode="global_menu_new" url="/diagnosysserviceses?form" z="eF7qfJarHqnnzHT8MvhKJdEu7yI="/>
+            <menu:item id="i_diagnosysservices_list" messageCode="global_menu_list" url="/diagnosysserviceses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="dLSGjlHsR3ghmnXNmZesMMU+CK8="/>
+        </menu:category>
+        <menu:category id="c_servicediagnosys" z="stH48u9v0Efjx5oAMkDfFdn1/ro=">
+            <menu:item id="i_servicediagnosys_new" messageCode="global_menu_new" url="/servicediagnosyses?form" z="RwLR6j+zvGmLj01QgjF65zHdjWA="/>
+            <menu:item id="i_servicediagnosys_list" messageCode="global_menu_list" url="/servicediagnosyses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="I0vCrN0w9dGKilrTwxCeBBiFjqs="/>
+        </menu:category>
+        <menu:category id="c_diagnosistype" z="wONjN/fjWzBrrutkiDIuUbYyu1U=">
+            <menu:item id="i_diagnosistype_new" messageCode="global_menu_new" url="/diagnosistypes?form" z="uILt5C71nECacgrzBxbnWswT40M="/>
+            <menu:item id="i_diagnosistype_list" messageCode="global_menu_list" url="/diagnosistypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="8GEuCvJ8c92Otjlq4h4GnPujwGk="/>
+        </menu:category>
     </menu:menu>
 </div>
