@@ -7,5 +7,7 @@
         <field:display field="diagnoses" id="s_com_mcel2_domain_ServiceDiagnosys_diagnoses" object="${servicediagnosys}" z="j/5KAAE28Nvc9RRGPLCeNTRAv9Q="/>
         <field:display field="services" id="s_com_mcel2_domain_ServiceDiagnosys_services" object="${servicediagnosys}" z="sn5nqioMQOuZVLy94ax0uRE8Hio="/>
         <field:display field="items" id="s_com_mcel2_domain_ServiceDiagnosys_items" object="${servicediagnosys}" z="3qEdodyL6Cw4/djSawqlrZb1yq4="/>
+        <field:display field="irreparablePdf" id="s_com_mcel2_domain_ServiceDiagnosys_irreparablePdf" object="${servicediagnosys}" z="1QlSoBCNMkCXGxqqc4PFMSXoizQ="/>
+        <field:display field="photos" id="s_com_mcel2_domain_ServiceDiagnosys_photos" object="${servicediagnosys}" z="2UZ9Gf62zoEXXACKzGmAH6IjhzY="/>
     </page:show>
 </div>

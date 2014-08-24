@@ -152,3 +152,7 @@ field set --fieldName cosmeticState --type ~.domain.DiagnosisType --class ~.doma
 field set --fieldName services --type ~.domain.DiagnosysServices --class ~.domain.ServiceDiagnosys
 field set --fieldName items --type ~.domain.DiagnosisItems --class ~.domain.ServiceDiagnosys
 web mvc all --package ~.web
+field file --fieldName irreparablePdf --class ~.domain.ServiceDiagnosys --contentType PDF
+web mvc all --package ~.web
+field file --contentType JPG --fieldName photos --class ~.domain.ServiceDiagnosys
+web mvc all --package ~.web

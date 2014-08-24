@@ -8,6 +8,8 @@
             <table:column id="c_com_mcel2_domain_ServiceDiagnosys_diagnoses" property="diagnoses" z="RmDpypzDFC0Qt489sVq003sDPJo="/>
             <table:column id="c_com_mcel2_domain_ServiceDiagnosys_services" property="services" z="jGJmoTyTEgBBcWOmKjBbYphON6o="/>
             <table:column id="c_com_mcel2_domain_ServiceDiagnosys_items" property="items" z="3ldo32JJ1otWJ3QLtm2bP35tlMM="/>
+            <table:column id="c_com_mcel2_domain_ServiceDiagnosys_irreparablePdf" property="irreparablePdf" z="lrPEO5gbAD3MHOOlIEtKPWHoAwI="/>
+            <table:column id="c_com_mcel2_domain_ServiceDiagnosys_photos" property="photos" z="KH09CVn3qIFsoTzmLF/3RZ4ECxY="/>
         </table:table>
     </page:list>
 </div>

@@ -14,7 +14,7 @@ privileged aspect ServiceDiagnosys_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager ServiceDiagnosys.entityManager;
     
-    public static final List<String> ServiceDiagnosys.fieldNames4OrderClauseFilter = java.util.Arrays.asList("serviceOrder", "diagnoses", "services", "items");
+    public static final List<String> ServiceDiagnosys.fieldNames4OrderClauseFilter = java.util.Arrays.asList("serviceOrder", "diagnoses", "services", "items", "irreparablePdf", "photos");
     
     public static final EntityManager ServiceDiagnosys.entityManager() {
         EntityManager em = new ServiceDiagnosys().entityManager;

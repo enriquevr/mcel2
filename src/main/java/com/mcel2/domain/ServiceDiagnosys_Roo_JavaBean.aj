@@ -44,4 +44,20 @@ privileged aspect ServiceDiagnosys_Roo_JavaBean {
         this.items = items;
     }
     
+    public byte[] ServiceDiagnosys.getIrreparablePdf() {
+        return this.irreparablePdf;
+    }
+    
+    public void ServiceDiagnosys.setIrreparablePdf(byte[] irreparablePdf) {
+        this.irreparablePdf = irreparablePdf;
+    }
+    
+    public byte[] ServiceDiagnosys.getPhotos() {
+        return this.photos;
+    }
+    
+    public void ServiceDiagnosys.setPhotos(byte[] photos) {
+        this.photos = photos;
+    }
+    
 }

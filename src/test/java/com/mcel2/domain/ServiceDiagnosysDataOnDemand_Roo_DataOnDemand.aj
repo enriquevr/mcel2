@@ -29,7 +29,19 @@ privileged aspect ServiceDiagnosysDataOnDemand_Roo_DataOnDemand {
     
     public ServiceDiagnosys ServiceDiagnosysDataOnDemand.getNewTransientServiceDiagnosys(int index) {
         ServiceDiagnosys obj = new ServiceDiagnosys();
+        setIrreparablePdf(obj, index);
+        setPhotos(obj, index);
         return obj;
+    }
+    
+    public void ServiceDiagnosysDataOnDemand.setIrreparablePdf(ServiceDiagnosys obj, int index) {
+        byte[] irreparablePdf = String.valueOf(index).getBytes();
+        obj.setIrreparablePdf(irreparablePdf);
+    }
+    
+    public void ServiceDiagnosysDataOnDemand.setPhotos(ServiceDiagnosys obj, int index) {
+        byte[] photos = String.valueOf(index).getBytes();
+        obj.setPhotos(photos);
     }
     
     public ServiceDiagnosys ServiceDiagnosysDataOnDemand.getSpecificServiceDiagnosys(int index) {

@@ -7,6 +7,8 @@ import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.ManyToMany;
+import javax.persistence.Lob;
+import org.springframework.roo.classpath.operations.jsr303.RooUploadedFile;
 
 @RooJavaBean
 @RooToString
@@ -32,4 +34,16 @@ public class ServiceDiagnosys {
      */
     @ManyToMany(cascade = CascadeType.ALL)
     private Set<DiagnosisItems> items = new HashSet<DiagnosisItems>();
+
+    /**
+     */
+    @RooUploadedFile(contentType = "application/pdf")
+    @Lob
+    private byte[] irreparablePdf;
+
+    /**
+     */
+    @RooUploadedFile(contentType = "image/jpeg")
+    @Lob
+    private byte[] photos;
 }
