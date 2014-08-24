@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_mcel2_domain_ServiceDiagnosys" items="${servicediagnosyses}" z="dSXcCLms0j6TMWvwtxt1G422vTU=">
+        <table:table data="${servicediagnosyses}" id="l_com_mcel2_domain_ServiceDiagnosys" path="/servicediagnosyses" z="PvcWVfFhADWaa5W96u/gvoZ+Jzk=">
+            <table:column id="c_com_mcel2_domain_ServiceDiagnosys_serviceOrder" property="serviceOrder" z="uPfdlUOaFW/zyfPAH0/jZEtSoQY="/>
+            <table:column id="c_com_mcel2_domain_ServiceDiagnosys_diagnoses" property="diagnoses" z="RmDpypzDFC0Qt489sVq003sDPJo="/>
+            <table:column id="c_com_mcel2_domain_ServiceDiagnosys_services" property="services" z="jGJmoTyTEgBBcWOmKjBbYphON6o="/>
+            <table:column id="c_com_mcel2_domain_ServiceDiagnosys_items" property="items" z="3ldo32JJ1otWJ3QLtm2bP35tlMM="/>
+        </table:table>
+    </page:list>
+</div>
