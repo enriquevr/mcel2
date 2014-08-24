@@ -3,7 +3,6 @@
 
 package com.mcel2.domain;
 
-import com.mcel2.domain.ProductBrand;
 import com.mcel2.domain.ProductColor;
 
 privileged aspect ProductColor_Roo_JavaBean {
@@ -14,14 +13,6 @@ privileged aspect ProductColor_Roo_JavaBean {
     
     public void ProductColor.setColor(String color) {
         this.color = color;
-    }
-    
-    public ProductBrand ProductColor.getBrand() {
-        return this.brand;
-    }
-    
-    public void ProductColor.setBrand(ProductBrand brand) {
-        this.brand = brand;
     }
     
 }

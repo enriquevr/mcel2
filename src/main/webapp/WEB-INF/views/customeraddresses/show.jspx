@@ -10,5 +10,6 @@
         <field:display field="extNumber" id="s_com_mcel2_domain_CustomerAddress_extNumber" object="${customeraddress}" z="6/aFnnxV5ehmy2Jur+mQp6szfQE="/>
         <field:display field="countryState" id="s_com_mcel2_domain_CustomerAddress_countryState" object="${customeraddress}" z="l/f8cWASFbbxPNsYyjebu7jqtrc="/>
         <field:display field="delegacion" id="s_com_mcel2_domain_CustomerAddress_delegacion" object="${customeraddress}" z="chtl2pWxRc7HQqoAQx22hXW7lbY="/>
+        <field:display field="colony" id="s_com_mcel2_domain_CustomerAddress_colony" object="${customeraddress}" z="2NoBdW0XjlnTL2Y0+twyyYBc+v4="/>
     </page:show>
 </div>

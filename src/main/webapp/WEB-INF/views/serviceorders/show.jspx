@@ -7,7 +7,6 @@
         <field:display field="subfamily" id="s_com_mcel2_domain_ServiceOrder_subfamily" object="${serviceorder}" z="dBtHGlfcxKyLSuaCRrXl9rNFxjk="/>
         <field:display field="brand" id="s_com_mcel2_domain_ServiceOrder_brand" object="${serviceorder}" z="fx1YsMy5YM57PaIXYwMYjaF1OJo="/>
         <field:display field="color" id="s_com_mcel2_domain_ServiceOrder_color" object="${serviceorder}" z="zfTJeP/QmqnsOP5zcP1HVsK8Il8="/>
-        <field:display field="contract" id="s_com_mcel2_domain_ServiceOrder_contract" object="${serviceorder}" z="28C6H0Wykgoy/lLYiXSP0d5yFhU="/>
         <field:display field="serialNumber" id="s_com_mcel2_domain_ServiceOrder_serialNumber" object="${serviceorder}" z="Yo9yE3mzYE8vAoAjz0uTNg5g1H4="/>
         <field:display field="failures" id="s_com_mcel2_domain_ServiceOrder_failures" object="${serviceorder}" z="gLDSDt754d2UvCoq6dtVUhkt8Vk="/>
         <field:display field="observations" id="s_com_mcel2_domain_ServiceOrder_observations" object="${serviceorder}" z="9UC/kV/OgTUi+NHoi3bp7z+gq/Q="/>
@@ -15,5 +14,7 @@
         <field:display field="customer" id="s_com_mcel2_domain_ServiceOrder_customer" object="${serviceorder}" z="IFl3SKVMXgXcOjf/SqoL7c61roQ="/>
         <field:display field="address" id="s_com_mcel2_domain_ServiceOrder_address" object="${serviceorder}" z="RMxeq94Egd/h81Cn8VNewLxFcUs="/>
         <field:display field="homeOrInStoreDelivery" id="s_com_mcel2_domain_ServiceOrder_homeOrInStoreDelivery" object="${serviceorder}" z="CWadcrT3Nj6sBE/V8d78WYF5JY8="/>
+        <field:display field="cosmeticState" id="s_com_mcel2_domain_ServiceOrder_cosmeticState" object="${serviceorder}" z="/qj4Ql1VceOm79Ti7MMfFX6nq1g="/>
+        <field:display field="frontDeskTicket" id="s_com_mcel2_domain_ServiceOrder_frontDeskTicket" object="${serviceorder}" z="IGH23NIwUkQv24xPjS7oZvzm1bA="/>
     </page:show>
 </div>

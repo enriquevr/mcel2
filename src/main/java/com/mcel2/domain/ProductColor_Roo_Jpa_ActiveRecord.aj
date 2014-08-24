@@ -14,7 +14,7 @@ privileged aspect ProductColor_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager ProductColor.entityManager;
     
-    public static final List<String> ProductColor.fieldNames4OrderClauseFilter = java.util.Arrays.asList("color", "brand");
+    public static final List<String> ProductColor.fieldNames4OrderClauseFilter = java.util.Arrays.asList("color");
     
     public static final EntityManager ProductColor.entityManager() {
         EntityManager em = new ProductColor().entityManager;

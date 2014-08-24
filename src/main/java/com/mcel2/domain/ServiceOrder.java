@@ -35,11 +35,6 @@ public class ServiceOrder {
 
     /**
      */
-    @ManyToOne
-    private Contract contract;
-
-    /**
-     */
     private String serialNumber;
 
     /**
@@ -69,4 +64,13 @@ public class ServiceOrder {
     /**
      */
     private Boolean homeOrInStoreDelivery;
+
+    /**
+     */
+    @ManyToMany(cascade = CascadeType.ALL)
+    private Set<ProductCosmeticState> cosmeticState = new HashSet<ProductCosmeticState>();
+
+    /**
+     */
+    private String frontDeskTicket;
 }

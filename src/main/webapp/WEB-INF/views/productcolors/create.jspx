@@ -4,7 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_com_mcel2_domain_ProductColor" modelAttribute="productColor" path="/productcolors" render="${empty dependencies}" z="CCAgbPZWRajDehY4QLlk/Y3uqdc=">
         <field:input field="color" id="c_com_mcel2_domain_ProductColor_color" z="wpD440wzLS9++2Ah/SN1w4AwbFU="/>
-        <field:select field="brand" id="c_com_mcel2_domain_ProductColor_brand" itemValue="id" items="${productbrands}" path="/productbrands" z="HS3ElZPef7Kb7HEmlNui8uyN3H4="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_mcel2_domain_ProductColor" render="${not empty dependencies}" z="fL2Ddpi+GLH2dvvMm/hN0kvvKJc="/>
 </div>

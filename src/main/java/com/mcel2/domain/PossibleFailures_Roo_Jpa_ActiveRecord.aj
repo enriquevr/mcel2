@@ -14,7 +14,7 @@ privileged aspect PossibleFailures_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager PossibleFailures.entityManager;
     
-    public static final List<String> PossibleFailures.fieldNames4OrderClauseFilter = java.util.Arrays.asList("description");
+    public static final List<String> PossibleFailures.fieldNames4OrderClauseFilter = java.util.Arrays.asList("description", "failureType", "subfamily");
     
     public static final EntityManager PossibleFailures.entityManager() {
         EntityManager em = new PossibleFailures().entityManager;

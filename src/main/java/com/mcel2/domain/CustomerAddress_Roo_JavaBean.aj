@@ -63,4 +63,12 @@ privileged aspect CustomerAddress_Roo_JavaBean {
         this.delegacion = delegacion;
     }
     
+    public String CustomerAddress.getColony() {
+        return this.colony;
+    }
+    
+    public void CustomerAddress.setColony(String colony) {
+        this.colony = colony;
+    }
+    
 }

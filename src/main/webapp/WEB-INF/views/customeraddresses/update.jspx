@@ -10,5 +10,6 @@
         <field:input field="extNumber" id="c_com_mcel2_domain_CustomerAddress_extNumber" z="IudXffzo2YkGpX7vlZO4A0KWacw="/>
         <field:input field="countryState" id="c_com_mcel2_domain_CustomerAddress_countryState" z="DF1aXKr6y/vRWY0FL8pcOvFc5EI="/>
         <field:input field="delegacion" id="c_com_mcel2_domain_CustomerAddress_delegacion" z="TxcgIwAaf844rA+XgUhA1VXoBsY="/>
+        <field:input field="colony" id="c_com_mcel2_domain_CustomerAddress_colony" z="jLcgjaOBJJXaQYhCVLiWt/lTqUk="/>
     </form:update>
 </div>

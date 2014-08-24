@@ -47,5 +47,13 @@
             <menu:item id="i_accesories_new" messageCode="global_menu_new" url="/accesorieses?form" z="Rr8Fm9hXk73VyYGzg6enlhQ3yOg="/>
             <menu:item id="i_accesories_list" messageCode="global_menu_list" url="/accesorieses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="radurBfaYflO0s52DUeWIAaLyEU="/>
         </menu:category>
+        <menu:category id="c_productcosmeticstate" z="vrt2zX4N46DXFce6w6SLPdBCLdo=">
+            <menu:item id="i_productcosmeticstate_new" messageCode="global_menu_new" url="/productcosmeticstates?form" z="VLukiJNtQaT2SC1dTCk0UEOzoac="/>
+            <menu:item id="i_productcosmeticstate_list" messageCode="global_menu_list" url="/productcosmeticstates?page=1&amp;size=${empty param.size ? 10 : param.size}" z="CTQzLCYK2CG7m4ZUcGn0ekdnDGs="/>
+        </menu:category>
+        <menu:category id="c_possiblefailurestype" z="aiQm1lpgYbptXgt6TsLeSxaj6a8=">
+            <menu:item id="i_possiblefailurestype_new" messageCode="global_menu_new" url="/possiblefailurestypes?form" z="5mcy7hQmcTMi93vlZxvWhkYvLFs="/>
+            <menu:item id="i_possiblefailurestype_list" messageCode="global_menu_list" url="/possiblefailurestypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="3I4HA2gly5xzwI+A9JuTaXvkW98="/>
+        </menu:category>
     </menu:menu>
 </div>

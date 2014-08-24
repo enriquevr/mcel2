@@ -4,12 +4,12 @@
 package com.mcel2.domain;
 
 import com.mcel2.domain.Accesories;
-import com.mcel2.domain.Contract;
 import com.mcel2.domain.Customer;
 import com.mcel2.domain.CustomerAddress;
 import com.mcel2.domain.PossibleFailures;
 import com.mcel2.domain.ProductBrand;
 import com.mcel2.domain.ProductColor;
+import com.mcel2.domain.ProductCosmeticState;
 import com.mcel2.domain.ProductFamily;
 import com.mcel2.domain.ProductSubFamily;
 import com.mcel2.domain.ServiceOrder;
@@ -47,14 +47,6 @@ privileged aspect ServiceOrder_Roo_JavaBean {
     
     public void ServiceOrder.setColor(ProductColor color) {
         this.color = color;
-    }
-    
-    public Contract ServiceOrder.getContract() {
-        return this.contract;
-    }
-    
-    public void ServiceOrder.setContract(Contract contract) {
-        this.contract = contract;
     }
     
     public String ServiceOrder.getSerialNumber() {
@@ -111,6 +103,22 @@ privileged aspect ServiceOrder_Roo_JavaBean {
     
     public void ServiceOrder.setHomeOrInStoreDelivery(Boolean homeOrInStoreDelivery) {
         this.homeOrInStoreDelivery = homeOrInStoreDelivery;
+    }
+    
+    public Set<ProductCosmeticState> ServiceOrder.getCosmeticState() {
+        return this.cosmeticState;
+    }
+    
+    public void ServiceOrder.setCosmeticState(Set<ProductCosmeticState> cosmeticState) {
+        this.cosmeticState = cosmeticState;
+    }
+    
+    public String ServiceOrder.getFrontDeskTicket() {
+        return this.frontDeskTicket;
+    }
+    
+    public void ServiceOrder.setFrontDeskTicket(String frontDeskTicket) {
+        this.frontDeskTicket = frontDeskTicket;
     }
     
 }

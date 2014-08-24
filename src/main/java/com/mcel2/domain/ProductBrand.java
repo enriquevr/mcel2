@@ -13,9 +13,4 @@ public class ProductBrand {
      */
     private String name;
 
-    /**
-     */
-    @ManyToOne
-    private ProductSubFamily subfamily;
-
 }

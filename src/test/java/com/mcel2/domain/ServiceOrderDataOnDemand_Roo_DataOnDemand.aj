@@ -3,7 +3,6 @@
 
 package com.mcel2.domain;
 
-import com.mcel2.domain.ContractDataOnDemand;
 import com.mcel2.domain.CustomerAddressDataOnDemand;
 import com.mcel2.domain.CustomerDataOnDemand;
 import com.mcel2.domain.ProductBrandDataOnDemand;
@@ -40,9 +39,6 @@ privileged aspect ServiceOrderDataOnDemand_Roo_DataOnDemand {
     ProductColorDataOnDemand ServiceOrderDataOnDemand.productColorDataOnDemand;
     
     @Autowired
-    ContractDataOnDemand ServiceOrderDataOnDemand.contractDataOnDemand;
-    
-    @Autowired
     CustomerDataOnDemand ServiceOrderDataOnDemand.customerDataOnDemand;
     
     @Autowired
@@ -53,10 +49,16 @@ privileged aspect ServiceOrderDataOnDemand_Roo_DataOnDemand {
     
     public ServiceOrder ServiceOrderDataOnDemand.getNewTransientServiceOrder(int index) {
         ServiceOrder obj = new ServiceOrder();
+        setFrontDeskTicket(obj, index);
         setHomeOrInStoreDelivery(obj, index);
         setObservations(obj, index);
         setSerialNumber(obj, index);
         return obj;
+    }
+    
+    public void ServiceOrderDataOnDemand.setFrontDeskTicket(ServiceOrder obj, int index) {
+        String frontDeskTicket = "frontDeskTicket_" + index;
+        obj.setFrontDeskTicket(frontDeskTicket);
     }
     
     public void ServiceOrderDataOnDemand.setHomeOrInStoreDelivery(ServiceOrder obj, int index) {

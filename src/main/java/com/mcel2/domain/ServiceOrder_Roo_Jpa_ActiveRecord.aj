@@ -14,7 +14,7 @@ privileged aspect ServiceOrder_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager ServiceOrder.entityManager;
     
-    public static final List<String> ServiceOrder.fieldNames4OrderClauseFilter = java.util.Arrays.asList("family", "subfamily", "brand", "color", "contract", "serialNumber", "failures", "observations", "accesories", "customer", "address", "homeOrInStoreDelivery");
+    public static final List<String> ServiceOrder.fieldNames4OrderClauseFilter = java.util.Arrays.asList("family", "subfamily", "brand", "color", "serialNumber", "failures", "observations", "accesories", "customer", "address", "homeOrInStoreDelivery", "cosmeticState", "frontDeskTicket");
     
     public static final EntityManager ServiceOrder.entityManager() {
         EntityManager em = new ServiceOrder().entityManager;

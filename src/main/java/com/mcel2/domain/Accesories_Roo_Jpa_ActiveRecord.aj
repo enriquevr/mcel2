@@ -14,7 +14,7 @@ privileged aspect Accesories_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager Accesories.entityManager;
     
-    public static final List<String> Accesories.fieldNames4OrderClauseFilter = java.util.Arrays.asList("name");
+    public static final List<String> Accesories.fieldNames4OrderClauseFilter = java.util.Arrays.asList("name", "subfamily");
     
     public static final EntityManager Accesories.entityManager() {
         EntityManager em = new Accesories().entityManager;

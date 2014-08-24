@@ -13,8 +13,4 @@ public class ProductColor {
      */
     private String color;
 
-    /**
-     */
-    @ManyToOne
-    private ProductBrand brand;
 }

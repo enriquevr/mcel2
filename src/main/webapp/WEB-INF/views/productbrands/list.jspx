@@ -5,7 +5,6 @@
     <page:list id="pl_com_mcel2_domain_ProductBrand" items="${productbrands}" z="oJUuWYDTBssAD9UXc3prpft9BDg=">
         <table:table data="${productbrands}" id="l_com_mcel2_domain_ProductBrand" path="/productbrands" z="zHp1MWkOCIyaiKVyD11FLKR9MN4=">
             <table:column id="c_com_mcel2_domain_ProductBrand_name" property="name" z="L6H0D3Zs9PEoBCusxsHT01sKel0="/>
-            <table:column id="c_com_mcel2_domain_ProductBrand_subfamily" property="subfamily" z="EuxTjQPS91XFvcLStPkOL3IM5nw="/>
         </table:table>
     </page:list>
 </div>

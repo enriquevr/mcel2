@@ -7,7 +7,6 @@
         <field:select field="subfamily" id="c_com_mcel2_domain_ServiceOrder_subfamily" itemValue="id" items="${productsubfamilys}" path="/productsubfamilys" z="7VdzQvGlI7HBXLCPmU7rH7CTPPk="/>
         <field:select field="brand" id="c_com_mcel2_domain_ServiceOrder_brand" itemValue="id" items="${productbrands}" path="/productbrands" z="B272Ug0aXkrCkjS6bnkmQDuIOeM="/>
         <field:select field="color" id="c_com_mcel2_domain_ServiceOrder_color" itemValue="id" items="${productcolors}" path="/productcolors" z="7ccKsfnhcaj/Tx/ouoIp1F5CqSI="/>
-        <field:select field="contract" id="c_com_mcel2_domain_ServiceOrder_contract" itemValue="id" items="${contracts}" path="/contracts" z="pwDPcD3A9uB/0n5NbJhUPisVciY="/>
         <field:input field="serialNumber" id="c_com_mcel2_domain_ServiceOrder_serialNumber" z="ylCQRLILDT3KCeDvU8rWQreai68="/>
         <field:select field="failures" id="c_com_mcel2_domain_ServiceOrder_failures" itemValue="id" items="${possiblefailureses}" multiple="true" path="/possiblefailureses" z="VHgG7eyN/YpURiWWsIDz27xIJyk="/>
         <field:input field="observations" id="c_com_mcel2_domain_ServiceOrder_observations" z="oRM/2n+umy+6ndBXB3xk+V+1ApM="/>
@@ -15,5 +14,7 @@
         <field:select field="customer" id="c_com_mcel2_domain_ServiceOrder_customer" itemValue="id" items="${customers}" path="/customers" z="QKo2KxNWRjrAYKChzcjJM7FcJhg="/>
         <field:select field="address" id="c_com_mcel2_domain_ServiceOrder_address" itemValue="id" items="${customeraddresses}" path="/customeraddresses" z="XEGIMGJ2g4x1RF8Qcyt5M4iDceo="/>
         <field:checkbox field="homeOrInStoreDelivery" id="c_com_mcel2_domain_ServiceOrder_homeOrInStoreDelivery" z="/gO+6b35a4OBN4l87VrOB+rutBo="/>
+        <field:select field="cosmeticState" id="c_com_mcel2_domain_ServiceOrder_cosmeticState" itemValue="id" items="${productcosmeticstates}" multiple="true" path="/productcosmeticstates" z="9dh6Ls6D+MXiaaumfMMyn7igP7c="/>
+        <field:input field="frontDeskTicket" id="c_com_mcel2_domain_ServiceOrder_frontDeskTicket" z="Bv5FDl/7J2M9WLac9dWBB9L/nWY="/>
     </form:update>
 </div>

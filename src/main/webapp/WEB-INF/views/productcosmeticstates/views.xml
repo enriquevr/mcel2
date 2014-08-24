@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="productcosmeticstates/list">
+        <put-attribute name="body" value="/WEB-INF/views/productcosmeticstates/list.jspx"/>
+    </definition>
+<definition extends="default" name="productcosmeticstates/show">
+        <put-attribute name="body" value="/WEB-INF/views/productcosmeticstates/show.jspx"/>
+    </definition>
+<definition extends="default" name="productcosmeticstates/create">
+        <put-attribute name="body" value="/WEB-INF/views/productcosmeticstates/create.jspx"/>
+    </definition>
+<definition extends="default" name="productcosmeticstates/update">
+        <put-attribute name="body" value="/WEB-INF/views/productcosmeticstates/update.jspx"/>
+    </definition>
+</tiles-definitions>

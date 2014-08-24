@@ -5,6 +5,8 @@ package com.mcel2.domain;
 
 import com.mcel2.domain.PossibleFailures;
 import com.mcel2.domain.PossibleFailuresDataOnDemand;
+import com.mcel2.domain.PossibleFailuresTypeDataOnDemand;
+import com.mcel2.domain.ProductSubFamilyDataOnDemand;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -12,6 +14,7 @@ import java.util.List;
 import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 privileged aspect PossibleFailuresDataOnDemand_Roo_DataOnDemand {
@@ -21,6 +24,12 @@ privileged aspect PossibleFailuresDataOnDemand_Roo_DataOnDemand {
     private Random PossibleFailuresDataOnDemand.rnd = new SecureRandom();
     
     private List<PossibleFailures> PossibleFailuresDataOnDemand.data;
+    
+    @Autowired
+    PossibleFailuresTypeDataOnDemand PossibleFailuresDataOnDemand.possibleFailuresTypeDataOnDemand;
+    
+    @Autowired
+    ProductSubFamilyDataOnDemand PossibleFailuresDataOnDemand.productSubFamilyDataOnDemand;
     
     public PossibleFailures PossibleFailuresDataOnDemand.getNewTransientPossibleFailures(int index) {
         PossibleFailures obj = new PossibleFailures();

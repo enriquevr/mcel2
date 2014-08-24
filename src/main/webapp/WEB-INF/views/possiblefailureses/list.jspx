@@ -5,6 +5,8 @@
     <page:list id="pl_com_mcel2_domain_PossibleFailures" items="${possiblefailureses}" z="H8JIJ02BD5ViD/QUvsZnVtno5HY=">
         <table:table data="${possiblefailureses}" id="l_com_mcel2_domain_PossibleFailures" path="/possiblefailureses" z="HZLrcwE83oBJhxcSnNbtPn/FgXk=">
             <table:column id="c_com_mcel2_domain_PossibleFailures_description" property="description" z="R4WIAaCQlaUjntI1NTmN5AhYVLg="/>
+            <table:column id="c_com_mcel2_domain_PossibleFailures_failureType" property="failureType" z="KptGY6zKTMx2/A0f1Wj40tO20mA="/>
+            <table:column id="c_com_mcel2_domain_PossibleFailures_subfamily" property="subfamily" z="SgdVbOJYWXe1Ouo6pLL9cNkKeuE="/>
         </table:table>
     </page:list>
 </div>

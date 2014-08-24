@@ -3,7 +3,6 @@
 
 package com.mcel2.domain;
 
-import com.mcel2.domain.ProductBrandDataOnDemand;
 import com.mcel2.domain.ProductColor;
 import com.mcel2.domain.ProductColorDataOnDemand;
 import java.security.SecureRandom;
@@ -13,7 +12,6 @@ import java.util.List;
 import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 privileged aspect ProductColorDataOnDemand_Roo_DataOnDemand {
@@ -23,9 +21,6 @@ privileged aspect ProductColorDataOnDemand_Roo_DataOnDemand {
     private Random ProductColorDataOnDemand.rnd = new SecureRandom();
     
     private List<ProductColor> ProductColorDataOnDemand.data;
-    
-    @Autowired
-    ProductBrandDataOnDemand ProductColorDataOnDemand.productBrandDataOnDemand;
     
     public ProductColor ProductColorDataOnDemand.getNewTransientProductColor(int index) {
         ProductColor obj = new ProductColor();

@@ -4,7 +4,6 @@
 package com.mcel2.domain;
 
 import com.mcel2.domain.ProductBrand;
-import com.mcel2.domain.ProductSubFamily;
 
 privileged aspect ProductBrand_Roo_JavaBean {
     
@@ -14,14 +13,6 @@ privileged aspect ProductBrand_Roo_JavaBean {
     
     public void ProductBrand.setName(String name) {
         this.name = name;
-    }
-    
-    public ProductSubFamily ProductBrand.getSubfamily() {
-        return this.subfamily;
-    }
-    
-    public void ProductBrand.setSubfamily(ProductSubFamily subfamily) {
-        this.subfamily = subfamily;
     }
     
 }

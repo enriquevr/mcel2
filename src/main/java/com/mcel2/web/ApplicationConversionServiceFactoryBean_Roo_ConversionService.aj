@@ -10,9 +10,11 @@ import com.mcel2.domain.Customer;
 import com.mcel2.domain.CustomerAddress;
 import com.mcel2.domain.Failures;
 import com.mcel2.domain.PossibleFailures;
+import com.mcel2.domain.PossibleFailuresType;
 import com.mcel2.domain.Product;
 import com.mcel2.domain.ProductBrand;
 import com.mcel2.domain.ProductColor;
+import com.mcel2.domain.ProductCosmeticState;
 import com.mcel2.domain.ProductFamily;
 import com.mcel2.domain.ProductSubFamily;
 import com.mcel2.domain.ServiceOrder;
@@ -193,6 +195,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<PossibleFailuresType, String> ApplicationConversionServiceFactoryBean.getPossibleFailuresTypeToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.mcel2.domain.PossibleFailuresType, java.lang.String>() {
+            public String convert(PossibleFailuresType possibleFailuresType) {
+                return new StringBuilder().append(possibleFailuresType.getDescription()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, PossibleFailuresType> ApplicationConversionServiceFactoryBean.getIdToPossibleFailuresTypeConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.mcel2.domain.PossibleFailuresType>() {
+            public com.mcel2.domain.PossibleFailuresType convert(java.lang.Long id) {
+                return PossibleFailuresType.findPossibleFailuresType(id);
+            }
+        };
+    }
+    
+    public Converter<String, PossibleFailuresType> ApplicationConversionServiceFactoryBean.getStringToPossibleFailuresTypeConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.mcel2.domain.PossibleFailuresType>() {
+            public com.mcel2.domain.PossibleFailuresType convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), PossibleFailuresType.class);
+            }
+        };
+    }
+    
     public Converter<Product, String> ApplicationConversionServiceFactoryBean.getProductToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.mcel2.domain.Product, java.lang.String>() {
             public String convert(Product product) {
@@ -265,6 +291,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<ProductCosmeticState, String> ApplicationConversionServiceFactoryBean.getProductCosmeticStateToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.mcel2.domain.ProductCosmeticState, java.lang.String>() {
+            public String convert(ProductCosmeticState productCosmeticState) {
+                return new StringBuilder().append(productCosmeticState.getDescription()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, ProductCosmeticState> ApplicationConversionServiceFactoryBean.getIdToProductCosmeticStateConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.mcel2.domain.ProductCosmeticState>() {
+            public com.mcel2.domain.ProductCosmeticState convert(java.lang.Long id) {
+                return ProductCosmeticState.findProductCosmeticState(id);
+            }
+        };
+    }
+    
+    public Converter<String, ProductCosmeticState> ApplicationConversionServiceFactoryBean.getStringToProductCosmeticStateConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.mcel2.domain.ProductCosmeticState>() {
+            public com.mcel2.domain.ProductCosmeticState convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), ProductCosmeticState.class);
+            }
+        };
+    }
+    
     public Converter<ProductFamily, String> ApplicationConversionServiceFactoryBean.getProductFamilyToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.mcel2.domain.ProductFamily, java.lang.String>() {
             public String convert(ProductFamily productFamily) {
@@ -316,7 +366,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<ServiceOrder, String> ApplicationConversionServiceFactoryBean.getServiceOrderToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.mcel2.domain.ServiceOrder, java.lang.String>() {
             public String convert(ServiceOrder serviceOrder) {
-                return new StringBuilder().append(serviceOrder.getSerialNumber()).append(' ').append(serviceOrder.getObservations()).toString();
+                return new StringBuilder().append(serviceOrder.getSerialNumber()).append(' ').append(serviceOrder.getObservations()).append(' ').append(serviceOrder.getFrontDeskTicket()).toString();
             }
         };
     }
@@ -359,6 +409,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getPossibleFailuresToStringConverter());
         registry.addConverter(getIdToPossibleFailuresConverter());
         registry.addConverter(getStringToPossibleFailuresConverter());
+        registry.addConverter(getPossibleFailuresTypeToStringConverter());
+        registry.addConverter(getIdToPossibleFailuresTypeConverter());
+        registry.addConverter(getStringToPossibleFailuresTypeConverter());
         registry.addConverter(getProductToStringConverter());
         registry.addConverter(getIdToProductConverter());
         registry.addConverter(getStringToProductConverter());
@@ -368,6 +421,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getProductColorToStringConverter());
         registry.addConverter(getIdToProductColorConverter());
         registry.addConverter(getStringToProductColorConverter());
+        registry.addConverter(getProductCosmeticStateToStringConverter());
+        registry.addConverter(getIdToProductCosmeticStateConverter());
+        registry.addConverter(getStringToProductCosmeticStateConverter());
         registry.addConverter(getProductFamilyToStringConverter());
         registry.addConverter(getIdToProductFamilyConverter());
         registry.addConverter(getStringToProductFamilyConverter());

@@ -4,6 +4,7 @@
 package com.mcel2.web;
 
 import com.mcel2.domain.Accesories;
+import com.mcel2.domain.ProductSubFamily;
 import com.mcel2.web.AccesoriesController;
 import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;
@@ -86,6 +87,7 @@ privileged aspect AccesoriesController_Roo_Controller {
     
     void AccesoriesController.populateEditForm(Model uiModel, Accesories accesories) {
         uiModel.addAttribute("accesories", accesories);
+        uiModel.addAttribute("productsubfamilys", ProductSubFamily.findAllProductSubFamilys());
     }
     
     String AccesoriesController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

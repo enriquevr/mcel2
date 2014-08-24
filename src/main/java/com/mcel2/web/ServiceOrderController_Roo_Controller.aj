@@ -4,12 +4,12 @@
 package com.mcel2.web;
 
 import com.mcel2.domain.Accesories;
-import com.mcel2.domain.Contract;
 import com.mcel2.domain.Customer;
 import com.mcel2.domain.CustomerAddress;
 import com.mcel2.domain.PossibleFailures;
 import com.mcel2.domain.ProductBrand;
 import com.mcel2.domain.ProductColor;
+import com.mcel2.domain.ProductCosmeticState;
 import com.mcel2.domain.ProductFamily;
 import com.mcel2.domain.ProductSubFamily;
 import com.mcel2.domain.ServiceOrder;
@@ -96,12 +96,12 @@ privileged aspect ServiceOrderController_Roo_Controller {
     void ServiceOrderController.populateEditForm(Model uiModel, ServiceOrder serviceOrder) {
         uiModel.addAttribute("serviceOrder", serviceOrder);
         uiModel.addAttribute("accesorieses", Accesories.findAllAccesorieses());
-        uiModel.addAttribute("contracts", Contract.findAllContracts());
         uiModel.addAttribute("customers", Customer.findAllCustomers());
         uiModel.addAttribute("customeraddresses", CustomerAddress.findAllCustomerAddresses());
         uiModel.addAttribute("possiblefailureses", PossibleFailures.findAllPossibleFailureses());
         uiModel.addAttribute("productbrands", ProductBrand.findAllProductBrands());
         uiModel.addAttribute("productcolors", ProductColor.findAllProductColors());
+        uiModel.addAttribute("productcosmeticstates", ProductCosmeticState.findAllProductCosmeticStates());
         uiModel.addAttribute("productfamilys", ProductFamily.findAllProductFamilys());
         uiModel.addAttribute("productsubfamilys", ProductSubFamily.findAllProductSubFamilys());
     }

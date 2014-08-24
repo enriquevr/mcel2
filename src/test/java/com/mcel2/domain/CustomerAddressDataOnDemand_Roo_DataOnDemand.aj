@@ -25,6 +25,7 @@ privileged aspect CustomerAddressDataOnDemand_Roo_DataOnDemand {
     public CustomerAddress CustomerAddressDataOnDemand.getNewTransientCustomerAddress(int index) {
         CustomerAddress obj = new CustomerAddress();
         setAddressReferences(obj, index);
+        setColony(obj, index);
         setCountryState(obj, index);
         setDelegacion(obj, index);
         setExtNumber(obj, index);
@@ -37,6 +38,11 @@ privileged aspect CustomerAddressDataOnDemand_Roo_DataOnDemand {
     public void CustomerAddressDataOnDemand.setAddressReferences(CustomerAddress obj, int index) {
         String addressReferences = "addressReferences_" + index;
         obj.setAddressReferences(addressReferences);
+    }
+    
+    public void CustomerAddressDataOnDemand.setColony(CustomerAddress obj, int index) {
+        String colony = "colony_" + index;
+        obj.setColony(colony);
     }
     
     public void CustomerAddressDataOnDemand.setCountryState(CustomerAddress obj, int index) {

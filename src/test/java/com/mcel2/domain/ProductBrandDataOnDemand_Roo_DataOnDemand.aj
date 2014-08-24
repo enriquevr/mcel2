@@ -5,7 +5,6 @@ package com.mcel2.domain;
 
 import com.mcel2.domain.ProductBrand;
 import com.mcel2.domain.ProductBrandDataOnDemand;
-import com.mcel2.domain.ProductSubFamilyDataOnDemand;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -13,7 +12,6 @@ import java.util.List;
 import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 privileged aspect ProductBrandDataOnDemand_Roo_DataOnDemand {
@@ -23,9 +21,6 @@ privileged aspect ProductBrandDataOnDemand_Roo_DataOnDemand {
     private Random ProductBrandDataOnDemand.rnd = new SecureRandom();
     
     private List<ProductBrand> ProductBrandDataOnDemand.data;
-    
-    @Autowired
-    ProductSubFamilyDataOnDemand ProductBrandDataOnDemand.productSubFamilyDataOnDemand;
     
     public ProductBrand ProductBrandDataOnDemand.getNewTransientProductBrand(int index) {
         ProductBrand obj = new ProductBrand();

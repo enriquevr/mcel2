@@ -5,7 +5,6 @@
     <page:list id="pl_com_mcel2_domain_ProductColor" items="${productcolors}" z="dAqNuZmVGB6sLzbtKuJzNSfBLos=">
         <table:table data="${productcolors}" id="l_com_mcel2_domain_ProductColor" path="/productcolors" z="oZ/3SZaRyIHpv67lggCNxPr+h5o=">
             <table:column id="c_com_mcel2_domain_ProductColor_color" property="color" z="3Je7G9JZKvnQXGr3g2au1hlefb8="/>
-            <table:column id="c_com_mcel2_domain_ProductColor_brand" property="brand" z="2X2f0XLG4ydEPIUjZOc6Ip6xjGw="/>
         </table:table>
     </page:list>
 </div>

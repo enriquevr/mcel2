@@ -3,7 +3,6 @@
 
 package com.mcel2.web;
 
-import com.mcel2.domain.ProductBrand;
 import com.mcel2.domain.ProductColor;
 import com.mcel2.web.ProductColorController;
 import java.io.UnsupportedEncodingException;
@@ -87,7 +86,6 @@ privileged aspect ProductColorController_Roo_Controller {
     
     void ProductColorController.populateEditForm(Model uiModel, ProductColor productColor) {
         uiModel.addAttribute("productColor", productColor);
-        uiModel.addAttribute("productbrands", ProductBrand.findAllProductBrands());
     }
     
     String ProductColorController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

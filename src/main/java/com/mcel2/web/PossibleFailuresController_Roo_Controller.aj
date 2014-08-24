@@ -4,6 +4,8 @@
 package com.mcel2.web;
 
 import com.mcel2.domain.PossibleFailures;
+import com.mcel2.domain.PossibleFailuresType;
+import com.mcel2.domain.ProductSubFamily;
 import com.mcel2.web.PossibleFailuresController;
 import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;
@@ -86,6 +88,8 @@ privileged aspect PossibleFailuresController_Roo_Controller {
     
     void PossibleFailuresController.populateEditForm(Model uiModel, PossibleFailures possibleFailures) {
         uiModel.addAttribute("possibleFailures", possibleFailures);
+        uiModel.addAttribute("possiblefailurestypes", PossibleFailuresType.findAllPossibleFailuresTypes());
+        uiModel.addAttribute("productsubfamilys", ProductSubFamily.findAllProductSubFamilys());
     }
     
     String PossibleFailuresController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

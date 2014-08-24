@@ -5,6 +5,7 @@
     <page:list id="pl_com_mcel2_domain_Accesories" items="${accesorieses}" z="idevlm4UO9t3Q0MaP6CfIXk3bLA=">
         <table:table data="${accesorieses}" id="l_com_mcel2_domain_Accesories" path="/accesorieses" z="qlG3pmP+3nHSw2zzPhVuUWLEmyc=">
             <table:column id="c_com_mcel2_domain_Accesories_name" property="name" z="zPbJFWpqg0I3XO0P7YU/Z90g/YU="/>
+            <table:column id="c_com_mcel2_domain_Accesories_subfamily" property="subfamily" z="VXAdf3ozyVnCXB7uM++epSGGO5o="/>
         </table:table>
     </page:list>
 </div>

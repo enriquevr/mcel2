@@ -35,4 +35,8 @@ public class CustomerAddress {
     /**
      */
     private String delegacion;
+
+    /**
+     */
+    private String colony;
 }

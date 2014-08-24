@@ -4,6 +4,8 @@
 package com.mcel2.domain;
 
 import com.mcel2.domain.PossibleFailures;
+import com.mcel2.domain.PossibleFailuresType;
+import com.mcel2.domain.ProductSubFamily;
 
 privileged aspect PossibleFailures_Roo_JavaBean {
     
@@ -13,6 +15,22 @@ privileged aspect PossibleFailures_Roo_JavaBean {
     
     public void PossibleFailures.setDescription(String description) {
         this.description = description;
+    }
+    
+    public PossibleFailuresType PossibleFailures.getFailureType() {
+        return this.failureType;
+    }
+    
+    public void PossibleFailures.setFailureType(PossibleFailuresType failureType) {
+        this.failureType = failureType;
+    }
+    
+    public ProductSubFamily PossibleFailures.getSubfamily() {
+        return this.subfamily;
+    }
+    
+    public void PossibleFailures.setSubfamily(ProductSubFamily subfamily) {
+        this.subfamily = subfamily;
     }
     
 }

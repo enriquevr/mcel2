@@ -119,3 +119,22 @@ web mvc all --package ~.web
 perform package
 exit
 // Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-08-18 08:04:41
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-08-24 07:04:09
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-08-24 07:05:20
+field string --fieldName colony --class ~.domain.CustomerAddress
+field reference --fieldName subfamily --type ~.domain.ProductSubFamily --class ~.domain.Accesories
+entity jpa --class ~.domain.ProductCosmeticState --testAutomatically 
+field string --fieldName description --class ~.domain.ProductCosmeticState
+field set --fieldName cosmeticState --type ~.domain.ProductCosmeticState --class ~.domain.ServiceOrder
+web mvc all --package ~.web
+entity jpa --class ~.domain.PossibleFailuresType --testAutomatically 
+field reference --fieldName failureType --type ~.domain.PossibleFailuresType --class ~.domain.PossibleFailures
+// [failed] field reference --fieldName failureType --type ~.domain.PossibleFailuresType --class ~.domain.PossibleFailures
+field string --fieldName description --class ~.domain.PossibleFailuresType
+entity jpa --class ~.domain.PossibleFailuresType --testAutomatically 
+field string --fieldName description --class ~.domain.PossibleFailuresType
+web mvc all --package ~.web
+field string --fieldName frontDeskTicket --class ~.domain.ServiceOrder
+web mvc all --package ~.web
+field reference --fieldName subfamily --type ~.domain.ProductSubFamily --class ~.domain.PossibleFailures
+web mvc all --package ~.web

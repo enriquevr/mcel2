@@ -4,6 +4,7 @@
 package com.mcel2.domain;
 
 import com.mcel2.domain.Accesories;
+import com.mcel2.domain.ProductSubFamily;
 
 privileged aspect Accesories_Roo_JavaBean {
     
@@ -13,6 +14,14 @@ privileged aspect Accesories_Roo_JavaBean {
     
     public void Accesories.setName(String name) {
         this.name = name;
+    }
+    
+    public ProductSubFamily Accesories.getSubfamily() {
+        return this.subfamily;
+    }
+    
+    public void Accesories.setSubfamily(ProductSubFamily subfamily) {
+        this.subfamily = subfamily;
     }
     
 }

@@ -4,6 +4,5 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_com_mcel2_domain_ProductBrand" modelAttribute="productBrand" path="/productbrands" versionField="Version" z="w4HgKE4YQhl8YnogIdWou3rD8B4=">
         <field:input field="name" id="c_com_mcel2_domain_ProductBrand_name" z="6MqVenkgVncatoZ2Q8wL0nW7Guc="/>
-        <field:select field="subfamily" id="c_com_mcel2_domain_ProductBrand_subfamily" itemValue="id" items="${productsubfamilys}" path="/productsubfamilys" z="Ti1eH/npzzSeK0qG4G1KL0TsO9U="/>
     </form:update>
 </div>

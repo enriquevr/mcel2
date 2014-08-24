@@ -4,6 +4,8 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_com_mcel2_domain_PossibleFailures" modelAttribute="possibleFailures" path="/possiblefailureses" render="${empty dependencies}" z="lTWysgku3wwZLbcUEdYJMKsI9kc=">
         <field:input field="description" id="c_com_mcel2_domain_PossibleFailures_description" z="CFH7H5HL/us2HgEfpLjjNQPGt8k="/>
+        <field:select field="failureType" id="c_com_mcel2_domain_PossibleFailures_failureType" itemValue="id" items="${possiblefailurestypes}" path="/possiblefailurestypes" z="spMSLoru26kmHMQCegNqI5OKfTA="/>
+        <field:select field="subfamily" id="c_com_mcel2_domain_PossibleFailures_subfamily" itemValue="id" items="${productsubfamilys}" path="/productsubfamilys" z="5o9PtmDCetYuhPO4/M0FIcvb3SM="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_mcel2_domain_PossibleFailures" render="${not empty dependencies}" z="6iuv1MfDviQeS60vqPqJwHvrlTo="/>
 </div>
