@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_mcel2_domain_ServiceOrder" items="${serviceorders}" z="396v4rT6NANr+TR/jppwRp7/mNs=">
+        <table:table data="${serviceorders}" id="l_com_mcel2_domain_ServiceOrder" path="/serviceorders" z="mOv9YZKZdQj4PJ5oYn0nBSK3zCA=">
+            <table:column id="c_com_mcel2_domain_ServiceOrder_family" property="family" z="pTz6gE/UFRRX97LsNJ2btBWtnm0="/>
+            <table:column id="c_com_mcel2_domain_ServiceOrder_subfamily" property="subfamily" z="lA60MpFBv+IqlDWdTVIEDZUIvoA="/>
+            <table:column id="c_com_mcel2_domain_ServiceOrder_brand" property="brand" z="BbGCz/FRhWuNbmqqoBkR/QVruE4="/>
+            <table:column id="c_com_mcel2_domain_ServiceOrder_color" property="color" z="xj287mz9gGWxtrlSM33Kimhrpyo="/>
+            <table:column id="c_com_mcel2_domain_ServiceOrder_contract" property="contract" z="Dh9JyMl/k3iEYTPFMjCGYKM4/FM="/>
+            <table:column id="c_com_mcel2_domain_ServiceOrder_serialNumber" property="serialNumber" z="hjhNF8TWJiTxzP/9xhxoaNdngkY="/>
+        </table:table>
+    </page:list>
+</div>

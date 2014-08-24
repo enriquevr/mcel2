@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_mcel2_domain_Contract" object="${contract}" path="/contracts" z="NcBiDmMwsXZwyW/I+vf/11DICQc=">
+        <field:display field="serialNumber" id="s_com_mcel2_domain_Contract_serialNumber" object="${contract}" z="x76dfz6UTCu9fDPufxllZODC3mM="/>
+    </page:show>
+</div>

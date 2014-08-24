@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_productcolor" z="RWzfELwz+dDc8GDycHkfU8q2a8o=">
+            <menu:item id="i_productcolor_new" messageCode="global_menu_new" url="/productcolors?form" z="H3s1LTliq0mgFoR4gphcB92Da5w="/>
+            <menu:item id="i_productcolor_list" messageCode="global_menu_list" url="/productcolors?page=1&amp;size=${empty param.size ? 10 : param.size}" z="hA0XdBTpxUl9MGDVIlmMzAlhfsc="/>
+        </menu:category>
+        <menu:category id="c_productsubfamily" z="pZNGzIWDCYL0Fm0upzhsByfYMWs=">
+            <menu:item id="i_productsubfamily_new" messageCode="global_menu_new" url="/productsubfamilys?form" z="eEuiMohpjZknHlX/d6Ef23IJXlA="/>
+            <menu:item id="i_productsubfamily_list" messageCode="global_menu_list" url="/productsubfamilys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="R3oI3PrPUNNNTDuxj1mcErcOMtg="/>
+        </menu:category>
+        <menu:category id="c_contract" z="4+ZfkynELtH01Q9VUMSOoTGwqPA=">
+            <menu:item id="i_contract_new" messageCode="global_menu_new" url="/contracts?form" z="Ywk8JpUEsv3Yi6GdSROwzM7phdc="/>
+            <menu:item id="i_contract_list" messageCode="global_menu_list" url="/contracts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="T8YOGqikEgnHJfLf0mVomxbN/GI="/>
+        </menu:category>
+        <menu:category id="c_serviceorder" z="aU+/MJlmr25zGaIuz3pLDX+pVCU=">
+            <menu:item id="i_serviceorder_new" messageCode="global_menu_new" url="/serviceorders?form" z="ut06KbMoVBa0+ll12gygkil7BYU="/>
+            <menu:item id="i_serviceorder_list" messageCode="global_menu_list" url="/serviceorders?page=1&amp;size=${empty param.size ? 10 : param.size}" z="0Cs5A40ya80LqQzDSLr9UNh+Txg="/>
+        </menu:category>
+        <menu:category id="c_productfamily" z="vDsMuu5ew8tvw7visHs/boI8deE=">
+            <menu:item id="i_productfamily_new" messageCode="global_menu_new" url="/productfamilys?form" z="Kxjol8btY9yC/V5UIjDUi6ukafc="/>
+            <menu:item id="i_productfamily_list" messageCode="global_menu_list" url="/productfamilys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="rsnXMcxMtC/Ql33O262YbzQVaJk="/>
+        </menu:category>
+        <menu:category id="c_productbrand" z="pWCUR7wowwg5dzDVyA3bU22Me3Y=">
+            <menu:item id="i_productbrand_new" messageCode="global_menu_new" url="/productbrands?form" z="7FDd0t7kIYDe6cgdhJ7f7XfqaTs="/>
+            <menu:item id="i_productbrand_list" messageCode="global_menu_list" url="/productbrands?page=1&amp;size=${empty param.size ? 10 : param.size}" z="n6igaC0ZLpaa3zo+YpZpZ3MqHwg="/>
+        </menu:category>
+        <menu:category id="c_product" z="vJ6efqiSxFssuvqFTsXpvZ3AvA8=">
+            <menu:item id="i_product_new" messageCode="global_menu_new" url="/products?form" z="Ezf8cTW61d2RkMNEcYkDJpG01kc="/>
+            <menu:item id="i_product_list" messageCode="global_menu_list" url="/products?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kEeyCmUUYXShbDEWwOLheaAkM50="/>
+        </menu:category>
+        <menu:category id="c_possiblefailures" z="s6yTAjnNdg5NDN3bVKSZwftOq9A=">
+            <menu:item id="i_possiblefailures_new" messageCode="global_menu_new" url="/possiblefailureses?form" z="rB3cNeSwMKs3qLCxKlD/q5dlYyc="/>
+            <menu:item id="i_possiblefailures_list" messageCode="global_menu_list" url="/possiblefailureses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="B1lJWYDoBTHJJ1WQ0Tks608Rccw="/>
+        </menu:category>
+        <menu:category id="c_customeraddress" z="r3nvj8vcAP9GrXu5KOpo+vMjdLc=">
+            <menu:item id="i_customeraddress_new" messageCode="global_menu_new" url="/customeraddresses?form" z="3PGALrK73iVVRmBhWa+rgRaHWNM="/>
+            <menu:item id="i_customeraddress_list" messageCode="global_menu_list" url="/customeraddresses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="DeMsKJNLafI3cbciTTfdjW2Cxss="/>
+        </menu:category>
+        <menu:category id="c_customer" z="Wa+bVSiDyYo/wX1nGU1B/z+OKhE=">
+            <menu:item id="i_customer_new" messageCode="global_menu_new" url="/customers?form" z="d9+YIotZHp6KZLGKwwnMVzPvh8k="/>
+            <menu:item id="i_customer_list" messageCode="global_menu_list" url="/customers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Yo9cUtyc7EUvbxwQ7EoeqXWaVJM="/>
+        </menu:category>
+        <menu:category id="c_accesories" z="QjjjlrLmaQ85e1UgsujWXrE7UzA=">
+            <menu:item id="i_accesories_new" messageCode="global_menu_new" url="/accesorieses?form" z="Rr8Fm9hXk73VyYGzg6enlhQ3yOg="/>
+            <menu:item id="i_accesories_list" messageCode="global_menu_list" url="/accesorieses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="radurBfaYflO0s52DUeWIAaLyEU="/>
+        </menu:category>
+    </menu:menu>
+</div>

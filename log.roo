@@ -1,0 +1,121 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-08-09 08:22:58
+project --topLevelPackage com.mcel2
+jpa setup --provider HIBERNATE --database HYPERSONIC_PERSISTENT 
+// [failed] entity jpa --class ~.domain.Order --testAutomatically 
+entity jpa --class ~.domain.ServiceOrder --testAutomatically 
+field string --fieldName orderId --notNull --sizeMin 2
+field date --fieldName entered --type java.util.Date 
+entity jpa --class ~.domain.ServiceOrder
+entity jpa --class ~.domain.ServiceOrder --testAutomatically 
+entity jpa --class ~.domain.ServiceOrder
+entity jpa --class ~.domain.ProductFamily --testAutomatically 
+entity jpa --class ~.domain.ServiceOrder
+entity jpa --class ~.domain.ProductFamily --testAutomatically 
+field string --fieldName name
+entity jpa --class ~.domain.ProductSubFamily --testAutomatically 
+field string --fieldName name
+entity jpa --class ~.domain.ProductBrand
+entity jpa --class ~.domain.Product
+entity jpa --class ~.domain.Product --testAutomatically 
+entity jpa --class ~.domain.Product --testAutomatically 
+entity jpa --class ~.domain.ProductBrand
+field string --fieldName name
+// [failed] field string --fieldName name
+entity jpa --class ~.domain.Product --testAutomatically 
+field string --fieldName name
+// [failed] field string --fieldName name
+entity jpa --class ~.domain.ProductColor --testAutomatically 
+entity jpa --class ~.domain.ProductColor --testAutomatically 
+field string --fieldName color
+entity jpa --class ~.domain.Contract --testAutomatically 
+entity jpa --class ~.domain.Contract --testAutomatically 
+field string --fieldName serialNumber
+entity jpa --class ~.domain.ProductFamily
+entity jpa --class ~.domain.ProductFamily --testAutomatically 
+entity jpa --class ~.domain.ProductSubFamily --testAutomatically 
+entity jpa --class ~.domain.ProductSubFamily --testAutomatically 
+entity jpa --class ~.domain.ProductSubFamily --testAutomatically 
+// [failed] field reference --fieldName family --type ~.domain.ProductFa
+field reference --fieldName family --type ~.domain.ProductFamily
+entity jpa --class ~.domain.ProductBrand --testAutomatically 
+entity jpa --class ~.domain.ProductBrand --testAutomatically 
+entity jpa --class ~.domain.ProductBrand --testAutomatically 
+field string --fieldName name
+// [failed] field string --fieldName name
+field reference --fieldName subfamily --type ~.domain.ProductSubFamily
+// [failed] field string --fieldName name
+// [failed] field string --fieldName name
+entity jpa --class ~.domain.ProductColor
+entity jpa --class ~.domain.ProductColor --testAutomatically 
+field string --fieldName color
+// [failed] field string --fieldName color
+field reference --fieldName brand --type ~.domain.ProductBrand
+field string --fieldName name --class ~.domain.ProductFamily
+// [failed] field string --fieldName name --class ~.domain.ProductFamily
+field string --fieldName name --class ~.domain.ProductSubFamily
+// [failed] field string --fieldName name --class ~.domain.ProductSubFamily
+// [failed] field string --fieldName name --class ~.domain.ProductFamily
+// [failed] field reference --fieldName family --type ~.domain.ProductFamily --class ~.domain.ProductSubFamily
+// [failed] field string --fieldName name --class ~.domain.ProductSubFamily
+// [failed] field string --fieldName name --class ~.domain.ProductBrand
+// [failed] field reference --fieldName subfamily --type ~.domain.ProductSubFamily --class ~.domain.ProductBrand
+// [failed] field string --fieldName name --class ~.domain.ProductBrand
+// [failed] field reference --fieldName brand --type ~.domain.ProductBrand --class ~.domain.ProductColor
+// [failed] field string --fieldName color --class ~.domain.ProductColor
+field reference --fieldName family --type ~.domain.ProductFamily --class ~.domain.ServiceOrder
+// [failed] field reference --fieldName family --type ~.domain.ProductFamily --class ~.domain.ServiceOrder
+field reference --fieldName subfamily --type ~.domain.ProductSubFamily --class ~.domain.ServiceOrder
+// [failed] field reference --fieldName subfamily --type ~.domain.ProductSubFamily --class ~.domain.ServiceOrder
+field reference --fieldName brand --type ~.domain.ProductBrand --class ~.domain.ServiceOrder
+// [failed] field reference --fieldName brand --type ~.domain.ProductBrand --class ~.domain.ServiceOrder
+field reference --fieldName color --type ~.domain.ProductColor --class ~.domain.ServiceOrder
+perform tests
+web mvc setup
+web mvc all --package ~.web
+field reference --fieldName brand --type ~.domain.Product --class ~.domain.ProductBrand
+field reference --fieldName brand --type ~.domain.ProductBrand --class ~.domain.Product
+field reference --fieldName contract --type ~.domain.Contract --class ~.domain.ServiceOrder
+field string --fieldName serialNumber --class ~.domain.ServiceOrder
+entity jpa --class ~.domain.PossibleFailures --testAutomatically 
+field string --fieldName description --class ~.domain.PossibleFailures
+field set --fieldName failures --type ~.domain.PossibleFailures
+field set --fieldName failures --type ~.domain.PossibleFailures --class ~.domain.ServiceOrder
+// [failed] field set --fieldName failures --type ~.domain.PossibleFailures --class ~.domain.ServiceOrder
+entity jpa --class ~.domain.PossibleFailures --testAutomatically 
+entity jpa --class ~.domain.PossibleFailures --testAutomatically 
+entity jpa --class ~.domain.PossibleFailures --testAutomatically 
+entity jpa --class ~.domain.PossibleFailures 
+// [failed] field set --fieldName failures --type ~.domain.PossibleFailures --class ~.domain.ServiceOrder
+field string --fieldName description --class ~.domain.PossibleFailures
+field set --fieldName failures --type ~.domain.PossibleFailures --class ~.domain.ServiceOrder
+entity jpa --class ~.domain.Failures 
+web mvc all --package ~.web
+field set --fieldName failures --type ~.domain.PossibleFailures --class ~.domain.ServiceOrder
+field string --fieldName observations --class ~.domain.ServiceOrder
+entity jpa --class ~.domain.Accer
+entity jpa --class ~.domain.Accesories
+field set --fieldName accesories --type ~.domain.Accesories --class ~.domain.ServiceOrder
+field string --fieldName name --class ~.domain.Accesories
+entity jpa --class ~.domain.Customer --testAutomatically 
+field string --fieldName name --class ~.domain.Customer
+field string --fieldName phone --class ~.domain.Customer
+field string --fieldName email --class ~.domain.Customer
+field reference --fieldName customer --type ~.domain.Customer --class ~.domain.ServiceOrder
+entity jpa --class ~.domain.CustomerAddress --testAutomatically 
+field string --fieldName street --class ~.domain.CustomerAddress
+field string --fieldName zipCode --class ~.domain.CustomerAddress
+// [failed] field string --fieldName references --class ~.domain.CustomerAddress
+field string --fieldName addressReferences --class ~.domain.CustomerAddress
+field string --fieldName intNumber --class ~.domain.CustomerAddress
+field string --fieldName extNumber --class ~.domain.CustomerAddress
+// [failed] field string --fieldName state --class ~.domain.CustomerAddress
+field string --fieldName countryState --class ~.domain.CustomerAddress
+field string --fieldName delegacion --class ~.domain.CustomerAddress
+field reference --fieldName address --type ~.domain.CustomerAddress --class ~.domain.Customer
+field reference --fieldName address --type ~.domain.CustomerAddress --class ~.domain.ServiceOrder
+field boolean --fieldName homeOrInStoreDelivery --class ~.domain.ServiceOrder
+web mvc all --package ~.web
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-08-18 08:03:22
+perform package
+exit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-08-18 08:04:41

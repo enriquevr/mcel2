@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_mcel2_domain_ProductSubFamily" items="${productsubfamilys}" z="UpgPgp3YExOwpZmsdlrs17kh4us=">
+        <table:table data="${productsubfamilys}" id="l_com_mcel2_domain_ProductSubFamily" path="/productsubfamilys" z="3MFNEmOtHK633wrA8V/w0TVbAO8=">
+            <table:column id="c_com_mcel2_domain_ProductSubFamily_family" property="family" z="w5W/VMOVMUoWT5OVUxDBT/Dtm4g="/>
+            <table:column id="c_com_mcel2_domain_ProductSubFamily_name" property="name" z="UHlVEOrC8bAeAZtQeYvAN0kFYs4="/>
+        </table:table>
+    </page:list>
+</div>
