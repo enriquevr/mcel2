@@ -229,6 +229,18 @@ public final class create_jspx extends org.apache.jasper.runtime.HttpJspBase
         return true;
       if (_jspx_meth_field_select_3((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
         return true;
+      out.write("\n");
+      out.write("        \n");
+      out.write("\n");
+      out.write("        Irreparable PDF File:  ");
+      out.write("<input type=\"file\" name=\"pdf file\" />");
+      out.write("<br />");
+      out.write("<br />");
+      out.write("\n");
+      out.write("        Diagnosis Photos:  ");
+      out.write("<input type=\"file\" name=\"photos\" />");
+      out.write("<br />");
+      out.write("<br />");
       if (_jspx_meth_field_textarea_0((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
         return true;
       if (_jspx_meth_field_textarea_1((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))

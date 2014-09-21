@@ -156,3 +156,4 @@ field file --fieldName irreparablePdf --class ~.domain.ServiceDiagnosys --conten
 web mvc all --package ~.web
 field file --contentType JPG --fieldName photos --class ~.domain.ServiceDiagnosys
 web mvc all --package ~.web
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-08-24 09:53:17

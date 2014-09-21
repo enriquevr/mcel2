@@ -7,6 +7,14 @@
         <field:select field="diagnoses" id="c_com_mcel2_domain_ServiceDiagnosys_diagnoses" itemValue="id" items="${diagnosistypes}" multiple="true" path="/diagnosistypes" z="5bu/b52aIIS28WjKaIE3KRjW1Dk="/>
         <field:select field="services" id="c_com_mcel2_domain_ServiceDiagnosys_services" itemValue="id" items="${diagnosysserviceses}" multiple="true" path="/diagnosysserviceses" z="SAoxb+l5WOr5E7w17z9tHzLwBAM="/>
         <field:select field="items" id="c_com_mcel2_domain_ServiceDiagnosys_items" itemValue="id" items="${diagnosisitemses}" multiple="true" path="/diagnosisitemses" z="eKKB3UsESCLczVaTYWMLw7XhM4Q="/>
+        
+
+        Irreparable PDF File:  <input name="pdf file" type="file"/>
+        <br/>
+        <br/>
+        Diagnosis Photos:  <input name="photos" type="file"/>
+        <br/>
+        <br/>
         <field:textarea field="irreparablePdf" id="c_com_mcel2_domain_ServiceDiagnosys_irreparablePdf" z="i1eQ0OuaWrJiezVNCaP/41Nlcy0="/>
         <field:textarea field="photos" id="c_com_mcel2_domain_ServiceDiagnosys_photos" z="Fi51iT/MEl0DbqX8Pr7O7OIHIZ4="/>
     </form:create>
