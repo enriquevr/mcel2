@@ -60,12 +60,17 @@ public final class default_jspx extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("<!DOCTYPE HTML SYSTEM \"about:legacy-compat\">\n");
-      out.write("<html>");
+      out.write("<html lang=\"en\">");
       out.write("<head>");
       out.write("<meta content=\"text/html; charset=UTF-8\" http-equiv=\"Content-Type\" />");
       out.write("<meta content=\"IE=8\" http-equiv=\"X-UA-Compatible\" />");
+      out.write("<meta content=\"width=device-width, initial-scale=1\" name=\"viewport\" />");
+      out.write("<meta content=\"\" name=\"description\" />");
+      out.write("<meta content=\"\" name=\"author\" />");
       if (_jspx_meth_util_load$1scripts_0(_jspx_page_context))
         return;
+      out.write("<link rel=\"stylesheet\" href=\"/mcel2/styles/bootstrap.min.css\" />");
+      out.write("<link rel=\"stylesheet\" href=\"/mcel2/styles/starter-template.css\" />");
       if (_jspx_meth_spring_message_0(_jspx_page_context))
         return;
       out.write("<title>");
@@ -74,18 +79,51 @@ public final class default_jspx extends org.apache.jasper.runtime.HttpJspBase
       out.write("</title>");
       out.write("</head>");
       out.write("<body class=\"tundra spring\">");
-      out.write("<div id=\"wrapper\">");
+      out.write("<div role=\"navigation\" class=\"navbar navbar-inverse navbar-fixed-top\">");
+      out.write("<div class=\"container\">");
+      out.write("<div class=\"navbar-header\">");
+      out.write("<button data-target=\".navbar-collapse\" data-toggle=\"collapse\" class=\"navbar-toggle collapsed\" type=\"button\">");
+      out.write("<span class=\"sr-only\">");
+      out.write("Toggle navigation");
+      out.write("</span>");
+      out.write("<span class=\"icon-bar\" />");
+      out.write("<span class=\"icon-bar\" />");
+      out.write("<span class=\"icon-bar\" />");
+      out.write("</button>");
+      out.write("<a href=\"#\" class=\"navbar-brand\">");
+      out.write("Mcel 2");
+      out.write("</a>");
+      out.write("</div>");
+      out.write("<div class=\"collapse navbar-collapse\">");
+      out.write("<ul class=\"nav navbar-nav\">");
+      out.write("<li class=\"active\">");
+      out.write("<a href=\"/mcel2/productcolors?form\">");
+      out.write("New Color");
+      out.write("</a>");
+      out.write("</li>");
+      out.write("<li>");
+      out.write("<a href=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("/mcel2/productcolors?page=1&size=${empty param.size ? 10 : param.size}", java.lang.String.class, (PageContext)_jspx_page_context, null) + "\">");
+      out.write("List Colors");
+      out.write("</a>");
+      out.write("</li>");
+      out.write("</ul>");
+      out.write("</div>");
+      out.write("</div>");
+      out.write("</div>");
+      out.write("<div class=\"container\">");
+      out.write("<div class=\"starter-template\" id=\"wrapper\">");
       if (_jspx_meth_tiles_insertAttribute_0(_jspx_page_context))
         return;
+      out.write("<div id=\"main\">");
       if (_jspx_meth_tiles_insertAttribute_1(_jspx_page_context))
         return;
-      out.write("<div id=\"main\">");
       if (_jspx_meth_tiles_insertAttribute_2(_jspx_page_context))
         return;
-      if (_jspx_meth_tiles_insertAttribute_3(_jspx_page_context))
-        return;
       out.write("</div>");
       out.write("</div>");
+      out.write("</div>");
+      out.write("<script src=\"/mcel2/js/jquery-1.11.1.min.js\" />");
+      out.write("<script src=\"/mcel2/js/bootstrap.min.js\" />");
       out.write("</body>");
       out.write("</html>");
     } catch (Throwable t) {
@@ -187,8 +225,7 @@ public final class default_jspx extends org.apache.jasper.runtime.HttpJspBase
     //  tiles:insertAttribute
     org.apache.tiles.jsp.taglib.InsertAttributeTag _jspx_th_tiles_insertAttribute_1 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.tiles.jsp.taglib.InsertAttributeTag.class) : new org.apache.tiles.jsp.taglib.InsertAttributeTag();
     _jspx_th_tiles_insertAttribute_1.setJspContext(_jspx_page_context);
-    _jspx_th_tiles_insertAttribute_1.setIgnore(true);
-    _jspx_th_tiles_insertAttribute_1.setName("menu");
+    _jspx_th_tiles_insertAttribute_1.setName("body");
     _jspx_th_tiles_insertAttribute_1.doTag();
     return false;
   }
@@ -200,21 +237,9 @@ public final class default_jspx extends org.apache.jasper.runtime.HttpJspBase
     //  tiles:insertAttribute
     org.apache.tiles.jsp.taglib.InsertAttributeTag _jspx_th_tiles_insertAttribute_2 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.tiles.jsp.taglib.InsertAttributeTag.class) : new org.apache.tiles.jsp.taglib.InsertAttributeTag();
     _jspx_th_tiles_insertAttribute_2.setJspContext(_jspx_page_context);
-    _jspx_th_tiles_insertAttribute_2.setName("body");
+    _jspx_th_tiles_insertAttribute_2.setIgnore(true);
+    _jspx_th_tiles_insertAttribute_2.setName("footer");
     _jspx_th_tiles_insertAttribute_2.doTag();
-    return false;
-  }
-
-  private boolean _jspx_meth_tiles_insertAttribute_3(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  tiles:insertAttribute
-    org.apache.tiles.jsp.taglib.InsertAttributeTag _jspx_th_tiles_insertAttribute_3 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.tiles.jsp.taglib.InsertAttributeTag.class) : new org.apache.tiles.jsp.taglib.InsertAttributeTag();
-    _jspx_th_tiles_insertAttribute_3.setJspContext(_jspx_page_context);
-    _jspx_th_tiles_insertAttribute_3.setIgnore(true);
-    _jspx_th_tiles_insertAttribute_3.setName("footer");
-    _jspx_th_tiles_insertAttribute_3.doTag();
     return false;
   }
 }
