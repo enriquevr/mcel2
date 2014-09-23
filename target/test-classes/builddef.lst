@@ -11,10 +11,12 @@ UTF-8
 /home/enrique/.m2/repository/org/springframework/spring-aspects/3.2.6.RELEASE/spring-aspects-3.2.6.RELEASE.jar
 -d
 /home/enrique/projects/mcel2/target/test-classes
+/home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/UserProfileIntegrationTest_Roo_IntegrationTest.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/PossibleFailuresIntegrationTest_Roo_IntegrationTest.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ContractIntegrationTest_Roo_IntegrationTest.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/PossibleFailuresTypeIntegrationTest_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductBrandIntegrationTest_Roo_Configurable.aj
+/home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/UserTypeDataOnDemand.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosisItemsIntegrationTest_Roo_IntegrationTest.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductCosmeticStateIntegrationTest.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductSubFamilyDataOnDemand_Roo_DataOnDemand.aj
@@ -33,6 +35,7 @@ UTF-8
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductSubFamilyDataOnDemand.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosysServicesDataOnDemand_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/CustomerIntegrationTest.java
+/home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/UserTypeIntegrationTest_Roo_IntegrationTest.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ServiceOrderDataOnDemand_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/CustomerIntegrationTest_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosisTypeIntegrationTest_Roo_Configurable.aj
@@ -52,6 +55,7 @@ UTF-8
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/PossibleFailuresTypeDataOnDemand.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductBrandIntegrationTest.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductBrandDataOnDemand.java
+/home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/UserTypeDataOnDemand_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosysServicesIntegrationTest.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosysServicesIntegrationTest_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosysServicesDataOnDemand_Roo_DataOnDemand.aj
@@ -60,11 +64,14 @@ UTF-8
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosisItemsIntegrationTest.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ServiceOrderIntegrationTest_Roo_IntegrationTest.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosisTypeDataOnDemand_Roo_Configurable.aj
+/home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/UserTypeIntegrationTest.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ServiceOrderIntegrationTest_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ServiceDiagnosysDataOnDemand_Roo_DataOnDemand.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/PossibleFailuresDataOnDemand.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/CustomerAddressDataOnDemand_Roo_Configurable.aj
+/home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/UserProfileIntegrationTest_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductColorIntegrationTest_Roo_Configurable.aj
+/home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/UserProfileDataOnDemand_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/PossibleFailuresTypeDataOnDemand_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductFamilyDataOnDemand.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/CustomerDataOnDemand.java
@@ -74,6 +81,8 @@ UTF-8
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosisItemsDataOnDemand.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductIntegrationTest.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductSubFamilyDataOnDemand_Roo_Configurable.aj
+/home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/UserTypeDataOnDemand_Roo_DataOnDemand.aj
+/home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/UserProfileDataOnDemand.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductSubFamilyIntegrationTest_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductSubFamilyIntegrationTest.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/CustomerIntegrationTest_Roo_IntegrationTest.aj
@@ -81,6 +90,7 @@ UTF-8
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosisItemsDataOnDemand_Roo_DataOnDemand.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosysServicesDataOnDemand.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductFamilyIntegrationTest_Roo_Configurable.aj
+/home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/UserProfileIntegrationTest.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductBrandDataOnDemand_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/PossibleFailuresTypeIntegrationTest.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductDataOnDemand_Roo_Configurable.aj
@@ -92,12 +102,14 @@ UTF-8
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ContractDataOnDemand_Roo_DataOnDemand.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductSubFamilyIntegrationTest_Roo_IntegrationTest.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosisItemsDataOnDemand_Roo_Configurable.aj
+/home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/UserProfileDataOnDemand_Roo_DataOnDemand.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/PossibleFailuresIntegrationTest.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosisItemsIntegrationTest_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductColorIntegrationTest.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/CustomerAddressIntegrationTest_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosisTypeDataOnDemand_Roo_DataOnDemand.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosisTypeIntegrationTest_Roo_IntegrationTest.aj
+/home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/UserTypeIntegrationTest_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ProductCosmeticStateDataOnDemand.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/ServiceDiagnosysIntegrationTest.java
 /home/enrique/projects/mcel2/src/test/java/com/mcel2/domain/DiagnosisTypeIntegrationTest.java

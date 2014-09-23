@@ -878,6 +878,100 @@ public final class menu_jspx extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
+  private boolean _jspx_meth_menu_category_17(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:category
+    org.apache.jsp.tag.web.menu.category_tagx _jspx_th_menu_category_17 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.category_tagx.class) : new org.apache.jsp.tag.web.menu.category_tagx();
+    _jspx_th_menu_category_17.setJspContext(_jspx_page_context);
+    _jspx_th_menu_category_17.setParent(_jspx_parent);
+    _jspx_th_menu_category_17.setZ("Nc+lNqs7+PD7u+fT2cFmbkfSr6c=");
+    _jspx_th_menu_category_17.setId("c_usertype");
+    _jspx_th_menu_category_17.setJspBody(new menu_jspxHelper( 18, _jspx_page_context, _jspx_th_menu_category_17, null));
+    _jspx_th_menu_category_17.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_item_34(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_34 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_34.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_34.setParent(_jspx_parent);
+    _jspx_th_menu_item_34.setZ("1Q08ohh3zBFonIM0U17v/VIcHg0=");
+    _jspx_th_menu_item_34.setUrl("/usertypes?form");
+    _jspx_th_menu_item_34.setMessageCode("global_menu_new");
+    _jspx_th_menu_item_34.setId("i_usertype_new");
+    _jspx_th_menu_item_34.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_item_35(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_35 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_35.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_35.setParent(_jspx_parent);
+    _jspx_th_menu_item_35.setZ("nIcrk/I4+jUazSFh2x9cjOdwEg8=");
+    _jspx_th_menu_item_35.setUrl((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("/usertypes?page=1&size=${empty param.size ? 10 : param.size}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_menu_item_35.setMessageCode("global_menu_list");
+    _jspx_th_menu_item_35.setId("i_usertype_list");
+    _jspx_th_menu_item_35.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_category_18(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:category
+    org.apache.jsp.tag.web.menu.category_tagx _jspx_th_menu_category_18 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.category_tagx.class) : new org.apache.jsp.tag.web.menu.category_tagx();
+    _jspx_th_menu_category_18.setJspContext(_jspx_page_context);
+    _jspx_th_menu_category_18.setParent(_jspx_parent);
+    _jspx_th_menu_category_18.setZ("2kJ9OpCfQCJw1Bn7dN6zVF1sN3I=");
+    _jspx_th_menu_category_18.setId("c_userprofile");
+    _jspx_th_menu_category_18.setJspBody(new menu_jspxHelper( 19, _jspx_page_context, _jspx_th_menu_category_18, null));
+    _jspx_th_menu_category_18.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_item_36(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_36 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_36.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_36.setParent(_jspx_parent);
+    _jspx_th_menu_item_36.setZ("RYXZPbBQnd8xC3sX9BmwGEMjG7I=");
+    _jspx_th_menu_item_36.setUrl("/userprofiles?form");
+    _jspx_th_menu_item_36.setMessageCode("global_menu_new");
+    _jspx_th_menu_item_36.setId("i_userprofile_new");
+    _jspx_th_menu_item_36.doTag();
+    return false;
+  }
+
+  private boolean _jspx_meth_menu_item_37(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  menu:item
+    org.apache.jsp.tag.web.menu.item_tagx _jspx_th_menu_item_37 = (_jspx_resourceInjector != null) ? _jspx_resourceInjector.createTagHandlerInstance(org.apache.jsp.tag.web.menu.item_tagx.class) : new org.apache.jsp.tag.web.menu.item_tagx();
+    _jspx_th_menu_item_37.setJspContext(_jspx_page_context);
+    _jspx_th_menu_item_37.setParent(_jspx_parent);
+    _jspx_th_menu_item_37.setZ("9erJNttMn6QObSrmM4/XDGz4+1Y=");
+    _jspx_th_menu_item_37.setUrl((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("/userprofiles?page=1&size=${empty param.size ? 10 : param.size}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_menu_item_37.setMessageCode("global_menu_list");
+    _jspx_th_menu_item_37.setId("i_userprofile_list");
+    _jspx_th_menu_item_37.doTag();
+    return false;
+  }
+
   private class menu_jspxHelper
       extends org.apache.jasper.runtime.JspFragmentHelper
   {
@@ -925,6 +1019,10 @@ public final class menu_jspx extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_menu_category_15((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
         return true;
       if (_jspx_meth_menu_category_16((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      if (_jspx_meth_menu_category_17((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      if (_jspx_meth_menu_category_18((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
         return true;
       return false;
     }
@@ -1081,6 +1179,24 @@ public final class menu_jspx extends org.apache.jasper.runtime.HttpJspBase
         return true;
       return false;
     }
+    public boolean invoke18( JspWriter out ) 
+      throws Throwable
+    {
+      if (_jspx_meth_menu_item_34((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      if (_jspx_meth_menu_item_35((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      return false;
+    }
+    public boolean invoke19( JspWriter out ) 
+      throws Throwable
+    {
+      if (_jspx_meth_menu_item_36((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      if (_jspx_meth_menu_item_37((javax.servlet.jsp.tagext.JspTag) _jspx_parent, _jspx_page_context))
+        return true;
+      return false;
+    }
     public void invoke( java.io.Writer writer )
       throws JspException
     {
@@ -1145,6 +1261,12 @@ public final class menu_jspx extends org.apache.jasper.runtime.HttpJspBase
             break;
           case 17:
             invoke17( out );
+            break;
+          case 18:
+            invoke18( out );
+            break;
+          case 19:
+            invoke19( out );
             break;
         }
       }

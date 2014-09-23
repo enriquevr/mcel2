@@ -71,5 +71,13 @@
             <menu:item id="i_diagnosistype_new" messageCode="global_menu_new" url="/diagnosistypes?form" z="uILt5C71nECacgrzBxbnWswT40M="/>
             <menu:item id="i_diagnosistype_list" messageCode="global_menu_list" url="/diagnosistypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="8GEuCvJ8c92Otjlq4h4GnPujwGk="/>
         </menu:category>
+        <menu:category id="c_usertype" z="Nc+lNqs7+PD7u+fT2cFmbkfSr6c=">
+            <menu:item id="i_usertype_new" messageCode="global_menu_new" url="/usertypes?form" z="1Q08ohh3zBFonIM0U17v/VIcHg0="/>
+            <menu:item id="i_usertype_list" messageCode="global_menu_list" url="/usertypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nIcrk/I4+jUazSFh2x9cjOdwEg8="/>
+        </menu:category>
+        <menu:category id="c_userprofile" z="2kJ9OpCfQCJw1Bn7dN6zVF1sN3I=">
+            <menu:item id="i_userprofile_new" messageCode="global_menu_new" url="/userprofiles?form" z="RYXZPbBQnd8xC3sX9BmwGEMjG7I="/>
+            <menu:item id="i_userprofile_list" messageCode="global_menu_list" url="/userprofiles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="9erJNttMn6QObSrmM4/XDGz4+1Y="/>
+        </menu:category>
     </menu:menu>
 </div>

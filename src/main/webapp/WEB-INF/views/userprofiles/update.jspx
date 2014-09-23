@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_mcel2_domain_UserProfile" modelAttribute="userProfile" path="/userprofiles" versionField="Version" z="pu+kv5rOutyYXrkbTuR8HQhuKB0=">
+        <field:input field="userName" id="c_com_mcel2_domain_UserProfile_userName" required="true" z="P6MCG7I4O6HijqrKBa+AHcuVNZA="/>
+        <field:input field="firstName" id="c_com_mcel2_domain_UserProfile_firstName" required="true" z="aODYGVyzZpbd++B56Rsn4T5iPOg="/>
+        <field:input field="lastNames" id="c_com_mcel2_domain_UserProfile_lastNames" required="true" z="QWEXlPO0/R+iMR6z/t+3nSQuzGE="/>
+        <field:input field="password" id="c_com_mcel2_domain_UserProfile_password" required="true" z="o98YDeHKN9Mqy+HaWE4iiD/ze80="/>
+    </form:update>
+</div>

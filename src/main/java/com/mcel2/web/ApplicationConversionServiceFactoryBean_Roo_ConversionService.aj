@@ -22,6 +22,8 @@ import com.mcel2.domain.ProductFamily;
 import com.mcel2.domain.ProductSubFamily;
 import com.mcel2.domain.ServiceDiagnosys;
 import com.mcel2.domain.ServiceOrder;
+import com.mcel2.domain.UserProfile;
+import com.mcel2.domain.UserType;
 import com.mcel2.web.ApplicationConversionServiceFactoryBean;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.core.convert.converter.Converter;
@@ -487,6 +489,54 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<UserProfile, String> ApplicationConversionServiceFactoryBean.getUserProfileToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.mcel2.domain.UserProfile, java.lang.String>() {
+            public String convert(UserProfile userProfile) {
+                return new StringBuilder().append(userProfile.getUserName()).append(' ').append(userProfile.getFirstName()).append(' ').append(userProfile.getLastNames()).append(' ').append(userProfile.getPassword()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, UserProfile> ApplicationConversionServiceFactoryBean.getIdToUserProfileConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.mcel2.domain.UserProfile>() {
+            public com.mcel2.domain.UserProfile convert(java.lang.Long id) {
+                return UserProfile.findUserProfile(id);
+            }
+        };
+    }
+    
+    public Converter<String, UserProfile> ApplicationConversionServiceFactoryBean.getStringToUserProfileConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.mcel2.domain.UserProfile>() {
+            public com.mcel2.domain.UserProfile convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), UserProfile.class);
+            }
+        };
+    }
+    
+    public Converter<UserType, String> ApplicationConversionServiceFactoryBean.getUserTypeToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.mcel2.domain.UserType, java.lang.String>() {
+            public String convert(UserType userType) {
+                return new StringBuilder().append(userType.getDescription()).append(' ').append(userType.getLevelOrdinal()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, UserType> ApplicationConversionServiceFactoryBean.getIdToUserTypeConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.mcel2.domain.UserType>() {
+            public com.mcel2.domain.UserType convert(java.lang.Long id) {
+                return UserType.findUserType(id);
+            }
+        };
+    }
+    
+    public Converter<String, UserType> ApplicationConversionServiceFactoryBean.getStringToUserTypeConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.mcel2.domain.UserType>() {
+            public com.mcel2.domain.UserType convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), UserType.class);
+            }
+        };
+    }
+    
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
         registry.addConverter(getAccerToStringConverter());
         registry.addConverter(getIdToAccerConverter());
@@ -545,6 +595,12 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getServiceOrderToStringConverter());
         registry.addConverter(getIdToServiceOrderConverter());
         registry.addConverter(getStringToServiceOrderConverter());
+        registry.addConverter(getUserProfileToStringConverter());
+        registry.addConverter(getIdToUserProfileConverter());
+        registry.addConverter(getStringToUserProfileConverter());
+        registry.addConverter(getUserTypeToStringConverter());
+        registry.addConverter(getIdToUserTypeConverter());
+        registry.addConverter(getStringToUserTypeConverter());
     }
     
     public void ApplicationConversionServiceFactoryBean.afterPropertiesSet() {

@@ -157,3 +157,15 @@ web mvc all --package ~.web
 field file --contentType JPG --fieldName photos --class ~.domain.ServiceDiagnosys
 web mvc all --package ~.web
 // Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-08-24 09:53:17
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-09-23 02:12:05
+entity jpa --class ~.domain.UserType --testAutomatically 
+field string --fieldName description --class ~.domain.UserType
+// [failed] field number --fieldName level --type java.lang.Integer --notNull --class ~.domain.UserType
+field number --fieldName levelOrdinal --type java.lang.Integer --notNull --class ~.domain.UserType
+// [failed] entity jpa --class ~.domain.User --testAutomatically 
+entity jpa --class ~.domain.UserProfile --testAutomatically 
+field string --fieldName userName --unique --notNull --class  ~.domain.UserProfile  
+field string --fieldName firstName --notNull --class  ~.domain.UserProfile  
+field string --fieldName lastNames --notNull --class  ~.domain.UserProfile  
+field string --fieldName password --notNull --class  ~.domain.UserProfile  
+web mvc all --package ~.web

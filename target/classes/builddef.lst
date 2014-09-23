@@ -20,6 +20,7 @@ UTF-8
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/CustomerAddress_Roo_Jpa_Entity.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ServiceOrder_Roo_ToString.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ServiceDiagnosys_Roo_Jpa_ActiveRecord.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/UserType_Roo_JavaBean.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ProductCosmeticState_Roo_Jpa_ActiveRecord.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ProductFamily_Roo_Jpa_Entity.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Contract_Roo_Jpa_ActiveRecord.aj
@@ -32,7 +33,9 @@ UTF-8
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Contract_Roo_Jpa_Entity.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Accesories_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Customer_Roo_JavaBean.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/UserProfile_Roo_ToString.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ServiceDiagnosys_Roo_Jpa_Entity.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/UserType.java
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Product_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ProductSubFamily_Roo_JavaBean.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ServiceOrder.java
@@ -61,6 +64,7 @@ UTF-8
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ProductCosmeticState_Roo_JavaBean.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/PossibleFailuresType_Roo_ToString.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/CustomerAddress_Roo_ToString.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/UserProfile.java
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ProductSubFamily_Roo_Jpa_Entity.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Accer_Roo_Jpa_Entity.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/DiagnosysServices.java
@@ -69,6 +73,7 @@ UTF-8
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/DiagnosisType_Roo_Jpa_Entity.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ProductCosmeticState_Roo_Jpa_Entity.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ProductFamily_Roo_ToString.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/UserProfile_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Product_Roo_Jpa_ActiveRecord.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Customer_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ServiceOrder_Roo_Configurable.aj
@@ -88,13 +93,16 @@ UTF-8
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/CustomerAddress_Roo_JavaBean.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/PossibleFailures_Roo_Jpa_ActiveRecord.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Contract_Roo_Configurable.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/UserProfile_Roo_JavaBean.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ProductColor_Roo_Jpa_ActiveRecord.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ServiceOrder_Roo_JavaBean.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ProductColor_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Contract_Roo_ToString.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/DiagnosisType_Roo_ToString.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/UserProfile_Roo_Jpa_ActiveRecord.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ServiceDiagnosys_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ProductBrand_Roo_JavaBean.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/UserType_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ServiceOrder_Roo_Jpa_Entity.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Failures_Roo_ToString.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ServiceDiagnosys.java
@@ -102,11 +110,14 @@ UTF-8
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ProductSubFamily.java
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ProductCosmeticState_Roo_ToString.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ProductSubFamily_Roo_Jpa_ActiveRecord.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/UserType_Roo_ToString.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/DiagnosisType_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/PossibleFailuresType_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/DiagnosysServices_Roo_Jpa_ActiveRecord.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/PossibleFailures_Roo_Configurable.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/ServiceDiagnosys_Roo_JavaBean.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/UserType_Roo_Jpa_Entity.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/UserProfile_Roo_Jpa_Entity.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Product_Roo_ToString.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/DiagnosisItems_Roo_Jpa_Entity.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Accer.java
@@ -114,6 +125,7 @@ UTF-8
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Contract.java
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/DiagnosysServices_Roo_Jpa_Entity.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Failures_Roo_Jpa_Entity.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/UserType_Roo_Jpa_ActiveRecord.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/CustomerAddress.java
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/PossibleFailuresType_Roo_JavaBean.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/domain/Accesories_Roo_JavaBean.aj
@@ -126,6 +138,7 @@ UTF-8
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/ServiceDiagnosysController.java
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/FailuresController_Roo_Controller.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/PossibleFailuresController_Roo_Controller.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/web/UserTypeController_Roo_Controller.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/AccesoriesController.java
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/DiagnosysServicesController_Roo_Controller.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/CustomerAddressController.java
@@ -146,6 +159,7 @@ UTF-8
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/ProductController_Roo_Controller.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/DiagnosisItemsController_Roo_Controller.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/DiagnosisTypeController.java
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/web/UserTypeController.java
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/ProductBrandController_Roo_Controller.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/ProductSubFamilyController_Roo_Controller.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/DiagnosysServicesController.java
@@ -155,10 +169,12 @@ UTF-8
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/CustomerController_Roo_Controller.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/ContractController_Roo_Controller.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/ServiceDiagnosysController_Roo_Controller.aj
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/web/UserProfileController_Roo_Controller.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/CustomerAddressController_Roo_Controller.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/ProductColorController_Roo_Controller.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/ApplicationConversionServiceFactoryBean.java
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/FailuresController.java
+/home/enrique/projects/mcel2/src/main/java/com/mcel2/web/UserProfileController.java
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/DiagnosisItemsController.java
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/ServiceOrderController_Roo_Controller.aj
 /home/enrique/projects/mcel2/src/main/java/com/mcel2/web/AccerController.java

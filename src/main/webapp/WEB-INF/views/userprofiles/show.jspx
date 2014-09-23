@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_mcel2_domain_UserProfile" object="${userprofile}" path="/userprofiles" z="4x5SD27BKw7Era9f8X50vQgZ1cA=">
+        <field:display field="userName" id="s_com_mcel2_domain_UserProfile_userName" object="${userprofile}" z="KULozoKQdNkuuWGa+7wmGoJz7ZI="/>
+        <field:display field="firstName" id="s_com_mcel2_domain_UserProfile_firstName" object="${userprofile}" z="D3zryn62r2aKwz53CImZvTL0cP4="/>
+        <field:display field="lastNames" id="s_com_mcel2_domain_UserProfile_lastNames" object="${userprofile}" z="dyxOMtpae1fUQ3pvgmq6hMi5dQo="/>
+        <field:display field="password" id="s_com_mcel2_domain_UserProfile_password" object="${userprofile}" z="qKVM0gacsgILXJBkMWjqKOd1QrA="/>
+    </page:show>
+</div>

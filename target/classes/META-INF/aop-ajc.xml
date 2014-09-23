@@ -1,5 +1,6 @@
 <aspectj>
 <aspects>
+<aspect name="com.mcel2.domain.UserProfile_Roo_ToString"/>
 <aspect name="com.mcel2.domain.PossibleFailures_Roo_JavaBean"/>
 <aspect name="com.mcel2.domain.ProductColor_Roo_ToString"/>
 <aspect name="com.mcel2.domain.ProductBrand_Roo_Configurable"/>
@@ -9,6 +10,7 @@
 <aspect name="com.mcel2.domain.DiagnosisType_Roo_Configurable"/>
 <aspect name="com.mcel2.domain.DiagnosysServices_Roo_JavaBean"/>
 <aspect name="com.mcel2.domain.PossibleFailures_Roo_Configurable"/>
+<aspect name="com.mcel2.domain.UserType_Roo_Jpa_ActiveRecord"/>
 <aspect name="com.mcel2.domain.DiagnosisType_Roo_JavaBean"/>
 <aspect name="com.mcel2.web.ServiceDiagnosysController_Roo_Controller"/>
 <aspect name="com.mcel2.domain.Accesories_Roo_Jpa_Entity"/>
@@ -17,6 +19,7 @@
 <aspect name="com.mcel2.web.AccerController_Roo_Controller"/>
 <aspect name="com.mcel2.web.ContractController_Roo_Controller"/>
 <aspect name="com.mcel2.domain.ProductSubFamily_Roo_Configurable"/>
+<aspect name="com.mcel2.domain.UserProfile_Roo_Configurable"/>
 <aspect name="com.mcel2.web.AccesoriesController_Roo_Controller"/>
 <aspect name="com.mcel2.domain.ServiceDiagnosys_Roo_JavaBean"/>
 <aspect name="com.mcel2.domain.ProductSubFamily_Roo_Jpa_Entity"/>
@@ -24,6 +27,7 @@
 <aspect name="com.mcel2.domain.Contract_Roo_Jpa_ActiveRecord"/>
 <aspect name="com.mcel2.domain.Failures_Roo_Jpa_Entity"/>
 <aspect name="com.mcel2.domain.DiagnosysServices_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.mcel2.domain.UserProfile_Roo_Jpa_ActiveRecord"/>
 <aspect name="com.mcel2.domain.ProductCosmeticState_Roo_ToString"/>
 <aspect name="com.mcel2.domain.DiagnosisItems_Roo_Configurable"/>
 <aspect name="com.mcel2.domain.ProductColor_Roo_Jpa_Entity"/>
@@ -38,6 +42,7 @@
 <aspect name="com.mcel2.domain.ProductCosmeticState_Roo_JavaBean"/>
 <aspect name="com.mcel2.domain.DiagnosisItems_Roo_ToString"/>
 <aspect name="com.mcel2.domain.ProductBrand_Roo_JavaBean"/>
+<aspect name="com.mcel2.domain.UserProfile_Roo_Jpa_Entity"/>
 <aspect name="com.mcel2.domain.DiagnosisItems_Roo_Jpa_Entity"/>
 <aspect name="com.mcel2.domain.ServiceOrder_Roo_Configurable"/>
 <aspect name="com.mcel2.domain.Contract_Roo_Configurable"/>
@@ -47,8 +52,9 @@
 <aspect name="com.mcel2.domain.PossibleFailures_Roo_ToString"/>
 <aspect name="com.mcel2.domain.ProductFamily_Roo_JavaBean"/>
 <aspect name="com.mcel2.web.PossibleFailuresTypeController_Roo_Controller"/>
-<aspect name="com.mcel2.domain.ServiceOrder_Roo_Jpa_Entity"/>
 <aspect name="com.mcel2.domain.PossibleFailuresType_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.mcel2.domain.ServiceOrder_Roo_Jpa_Entity"/>
+<aspect name="com.mcel2.web.UserTypeController_Roo_Controller"/>
 <aspect name="com.mcel2.domain.PossibleFailures_Roo_Jpa_Entity"/>
 <aspect name="com.mcel2.domain.ProductColor_Roo_Jpa_ActiveRecord"/>
 <aspect name="com.mcel2.web.ProductColorController_Roo_Controller"/>
@@ -74,9 +80,12 @@
 <aspect name="com.mcel2.domain.DiagnosysServices_Roo_Configurable"/>
 <aspect name="com.mcel2.domain.ServiceOrder_Roo_Jpa_ActiveRecord"/>
 <aspect name="com.mcel2.domain.Accer_Roo_Jpa_Entity"/>
+<aspect name="com.mcel2.web.UserProfileController_Roo_Controller"/>
 <aspect name="com.mcel2.domain.Accer_Roo_Configurable"/>
 <aspect name="com.mcel2.domain.Contract_Roo_Jpa_Entity"/>
 <aspect name="com.mcel2.web.DiagnosisTypeController_Roo_Controller"/>
+<aspect name="com.mcel2.domain.UserType_Roo_ToString"/>
+<aspect name="com.mcel2.domain.UserType_Roo_JavaBean"/>
 <aspect name="com.mcel2.domain.ServiceDiagnosys_Roo_Jpa_Entity"/>
 <aspect name="com.mcel2.domain.PossibleFailuresType_Roo_Configurable"/>
 <aspect name="com.mcel2.web.ProductBrandController_Roo_Controller"/>
@@ -90,18 +99,19 @@
 <aspect name="com.mcel2.domain.Accesories_Roo_Configurable"/>
 <aspect name="com.mcel2.domain.Contract_Roo_JavaBean"/>
 <aspect name="com.mcel2.domain.CustomerAddress_Roo_Jpa_Entity"/>
-<aspect name="com.mcel2.domain.ProductFamily_Roo_ToString"/>
 <aspect name="com.mcel2.domain.PossibleFailuresType_Roo_ToString"/>
+<aspect name="com.mcel2.domain.ProductFamily_Roo_ToString"/>
 <aspect name="com.mcel2.domain.DiagnosisType_Roo_Jpa_ActiveRecord"/>
 <aspect name="com.mcel2.domain.PossibleFailures_Roo_Jpa_ActiveRecord"/>
 <aspect name="com.mcel2.web.CustomerAddressController_Roo_Controller"/>
 <aspect name="com.mcel2.domain.Failures_Roo_Jpa_ActiveRecord"/>
 <aspect name="com.mcel2.domain.DiagnosisItems_Roo_JavaBean"/>
-<aspect name="com.mcel2.domain.DiagnosysServices_Roo_ToString"/>
 <aspect name="com.mcel2.web.PossibleFailuresController_Roo_Controller"/>
-<aspect name="com.mcel2.domain.ProductSubFamily_Roo_JavaBean"/>
+<aspect name="com.mcel2.domain.DiagnosysServices_Roo_ToString"/>
 <aspect name="com.mcel2.domain.Accer_Roo_ToString"/>
+<aspect name="com.mcel2.domain.ProductSubFamily_Roo_JavaBean"/>
 <aspect name="com.mcel2.domain.ProductBrand_Roo_ToString"/>
+<aspect name="com.mcel2.domain.UserType_Roo_Configurable"/>
 <aspect name="com.mcel2.domain.Product_Roo_ToString"/>
 <aspect name="com.mcel2.web.FailuresController_Roo_Controller"/>
 <aspect name="com.mcel2.domain.Customer_Roo_Jpa_Entity"/>
@@ -109,8 +119,10 @@
 <aspect name="com.mcel2.domain.Accesories_Roo_ToString"/>
 <aspect name="com.mcel2.web.DiagnosysServicesController_Roo_Controller"/>
 <aspect name="com.mcel2.domain.PossibleFailuresType_Roo_Jpa_Entity"/>
+<aspect name="com.mcel2.domain.UserType_Roo_Jpa_Entity"/>
 <aspect name="com.mcel2.web.ProductSubFamilyController_Roo_Controller"/>
 <aspect name="com.mcel2.domain.ServiceOrder_Roo_ToString"/>
+<aspect name="com.mcel2.domain.UserProfile_Roo_JavaBean"/>
 <aspect name="com.mcel2.domain.Customer_Roo_ToString"/>
 <aspect name="com.mcel2.domain.Customer_Roo_Configurable"/>
 </aspects>
